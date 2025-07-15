@@ -10,11 +10,66 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
-    <script type="module" src="{% static 'js/main.js' %}"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="module" src="js/main.js"></script>
   </head>
   <body>
-    <main id="app"></main>
+    <main id="app">
+      <section class="intro" role="region" aria-label="Portfolio Introduction">
+        <div class="intro__container">
+          <div class="intro__profile">
+            <img src="assets/profile.jpg" alt="JEJOMAR V. PARRILLA profile photo" class="intro__photo" />
+          </div>
+          <div class="intro__info">
+            <h1 class="intro__name">Hello, I'm <span>JEJOMAR V. PARRILLA</span></h1>
+            <h2 class="intro__title">Full-Stack Developer</h2>
+            <p class="intro__tagline">Computer Science graduate, top 5% CodeChum programmer, passionate about building scalable, modern web applications with clean architecture and beautiful UI/UX.</p>
+            <div class="intro__actions">
+              <a href="#projects" class="intro__cta" role="button" aria-label="View My Work">View My Work</a>
+              <a href="#contact" class="intro__cta intro__cta--secondary" role="button" aria-label="Contact Me">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about" role="region" aria-label="About Me">
+        <div class="about__container">
+          <div class="about__bio-card">
+            <img src="assets/profile.jpg" alt="JEJOMAR V. PARRILLA avatar" class="about__avatar" />
+            <h2>About Me</h2>
+            <p>
+              My journey into programming began with curiosity—before starting my course, I researched the fundamentals of coding and discovered Python as a beginner-friendly language. My love for problem-solving, especially in mathematics, drew me deeper into programming. I focused on mastering the basics, which helped me excel beyond my peers and encouraged me to compete in programming contests, ranking 9th in my first competition (iSite 2023).
+            </p>
+            <p>
+              My first major project was a full-fledged Library Management System, built from scratch using HTML, CSS, JS, and PHP, where I learned database normalization up to 3NF. This project was both challenging and rewarding, fueling my passion for development.
+            </p>
+            <p>
+              I continued to compete at regional and national levels, and in my third year, I led the development of CrimeGuard—a complex capstone project using Laravel, Vue.js, Tailwind CSS, and MySQL. Along the way, I built various projects, practiced Git workflows, and explored Django’s MTV architecture.
+            </p>
+            <p>
+              My OJT at ROK (Revolution of Kitten, Inc.) exposed me to Docker, GitLab, Vue.js + TS, and Matterport SDK, deepening my understanding of collaboration and modern development practices. My journey is driven by curiosity, a love for problem-solving, and a commitment to continuous learning.
+            </p>
+          </div>
+          <div class="about__highlights" aria-label="Highlights">
+            <div class="about__highlight">
+              <span class="about__highlight-icon" aria-hidden="true">🎓</span>
+              <span class="about__highlight-title">B.S. Computer Science<br><small>Magna Cum Laude, Western Leyte College</small></span>
+            </div>
+            <div class="about__highlight">
+              <span class="about__highlight-icon" aria-hidden="true">🏆</span>
+              <span class="about__highlight-title">Programmer of the Year 2025<br><small>Top 5% Nationwide – CodeChum</small></span>
+            </div>
+            <div class="about__highlight">
+              <span class="about__highlight-icon" aria-hidden="true">🥇</span>
+              <span class="about__highlight-title">Capstone Project of the Year<br><small>CrimeGuard System</small></span>
+            </div>
+            <div class="about__highlight">
+              <span class="about__highlight-icon" aria-hidden="true">💻</span>
+              <span class="about__highlight-title">OJT Intern<br><small>Revolution of Kitten, Inc. (2025)</small></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
   </body>
 </html>
