@@ -1,0 +1,113 @@
+.skills_tech {
+    width: 100%;
+    background: linear-gradient(135deg, #181824 0%, #23243a 100%);
+    box-shadow: 0 4px 32px #000a;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.skills_tech__group {
+    margin: auto;
+    margin-bottom: 1.5rem;
+    width: 1200px;
+}
+
+.skills_tech__title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffb300;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.02em;
+}
+
+.skills_tech__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills_tech__item {
+    background: #23243a;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px #0006;
+    padding: 1.2rem 1rem 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation: skill-fade-in 1.1s cubic-bezier(.4, 0, .2, 1);
+}
+
+.skills_tech__item:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 6px 24px #000c;
+}
+
+.skills_tech__icon {
+    height: 2.5rem;
+    object-fit: fill;
+    margin-bottom: 1.2em;
+}
+
+.skills_tech__name {
+    font-size: 1.08rem;
+    font-weight: 600;
+    color: #f5f6fa;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.skills_tech__bar {
+    width: 100%;
+    height: 8px;
+    background: #181824;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 0.3rem;
+}
+
+.skills_tech__bar-inner {
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #ffb300 0%, #00bfae 100%);
+    transition: width 1.2s cubic-bezier(.4, 0, .2, 1);
+}
+
+@media (max-width: 900px) {
+    .skills_tech {
+        padding: 1.5rem 0.7rem;
+    }
+
+    .skills_tech__list {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .skills_tech {
+        padding: 1rem 0.2rem;
+        margin-top: 2rem;
+    }
+
+    .skills_tech__title {
+        font-size: 1.08rem;
+    }
+}
+
+@keyframes skill-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
