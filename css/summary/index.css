@@ -1,0 +1,213 @@
+.short_summary--white {
+  width: 100vw;
+  background: var(--summary-bg, #fff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 0;
+  min-height: 60vh;
+  position: relative;
+  z-index: 1;
+}
+
+.short_summary__container--split {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+}
+
+.short_summary__left {
+  flex: 2 1 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--summary-text, #181824);
+  z-index: 2;
+}
+
+.short_summary__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--summary-text, #181824);
+  letter-spacing: 0.01em;
+  margin-bottom: 1.2rem;
+  animation: fade-in 1.2s 0.1s both;
+}
+.short_summary__heading span {
+  color: #b388ff;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+.short_summary__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: var(--summary-text, #181824);
+  animation: fade-in 1.2s 0.3s both;
+}
+
+.short_summary__desc--highlight {
+  color: #b388ff;
+  font-weight: 600;
+}
+
+.short_summary__lang {
+  color: #00bfae;
+  font-weight: 700;
+}
+.short_summary__framework {
+  color: #ffb300;
+  font-weight: 700;
+}
+
+.short_summary__findme {
+  margin-top: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  animation: fade-in 1.2s 0.7s both;
+}
+
+.short_summary__findme-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--summary-text, #181824);
+  margin-bottom: 0.2rem;
+}
+
+.short_summary__socials {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 0.2rem;
+}
+
+.short_summary__social--white {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.15s, filter 0.15s;
+}
+.short_summary__social--white svg {
+  display: block;
+  width: 28px;
+  height: 28px;
+  filter: grayscale(0.2) brightness(0.8);
+  transition: filter 0.2s, transform 0.2s;
+}
+.short_summary__social--white:focus svg,
+.short_summary__social--white:hover svg {
+  filter: drop-shadow(0 0 6px #b388ff) brightness(1.2);
+  transform: scale(1.12);
+}
+
+.short_summary__right {
+  flex: 1 1 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  min-height: 220px;
+  z-index: 1;
+}
+.short_summary__profile-anim {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.short_summary__profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: none;
+  background: #e3e9f7;
+  box-shadow: 0 0 24px 0 #b388ff33;
+  animation: profile-float 3.5s ease-in-out infinite alternate;
+}
+.short_summary__virtual-decor {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border: 2px solid #b388ff;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  pointer-events: none;
+  animation: decor-pulse 3.5s infinite alternate;
+}
+@keyframes profile-float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-12px); }
+}
+@keyframes decor-pulse {
+  0% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+@media (max-width: 900px) {
+  .short_summary__container--split {
+    flex-direction: column-reverse;
+    gap: 2.5rem;
+    padding: 0 1rem;
+    align-items: center;
+  }
+  .short_summary__right {
+    min-width: 140px;
+    min-height: 140px;
+  }
+  .short_summary__left {
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .short_summary--white {
+    padding: 2rem 0 1rem 0;
+  }
+  .short_summary__heading {
+    font-size: 1.05rem;
+  }
+  .short_summary__container--split {
+    padding: 0 0.5rem;
+  }
+  .short_summary__findme-title {
+    font-size: 0.95rem;
+  }
+  .short_summary__desc {
+    font-size: 0.92rem;
+  }
+  .short_summary__profile-anim {
+    width: 100px;
+    height: 100px;
+  }
+  .short_summary__profile-img {
+    width: 60px;
+    height: 60px;
+  }
+  .short_summary__virtual-decor {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
