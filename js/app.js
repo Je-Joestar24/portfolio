@@ -68,4 +68,24 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
     // Initial route
     router.route();
+
+    // Slick slider initialization after each route
+    const initSlick = () => {
+        if (window.$ && typeof $.fn.slick === 'function') {
+            $('.project-slider').not('.slick-initialized').slick({
+                arrows: false,
+                dots: true,
+                adaptiveHeight: true
+            });
+        }
+    };
+
+    // Listen for custom event or poll for DOM updates
+    const observer = new MutationObserver(() => {
+        initSlick();
+    });
+    observer.observe(document.getElementById('app__display'), { childList: true, subtree: true });
+
+    // Also run on initial load
+    setTimeout(initSlick, 300);
 });

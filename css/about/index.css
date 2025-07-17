@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: start;
   padding: 0;
+  padding-top: 60px;
   min-height: 60vh;
   position: relative;
   z-index: 1;

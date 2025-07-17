@@ -13,7 +13,7 @@ export default class extends AbstractView{
      */
     constructor(){
         super();
-        this.setTitle("Jejoestar24 | About");
+        this.setTitle("Jejoestar | About");
         this.intro = new Intro();
         this.skills = new Skills();
     }

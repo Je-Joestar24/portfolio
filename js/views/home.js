@@ -7,7 +7,7 @@ import Summary from "./home/summary.js";
 export default class extends AView {
     constructor() {
         super();
-        this.setTitle("Jejoestar24 | Home");
+        this.setTitle("Jejoestar | Home");
         this.summary = new Summary();
         this.hero = new Hero();
     }

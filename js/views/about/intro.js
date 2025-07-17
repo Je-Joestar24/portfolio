@@ -16,7 +16,9 @@ export default class {
                 <li><strong>Email:</strong> <a href="mailto:jpar1252003@gmail.com">jpar1252003@gmail.com</a></li>
                 <li><strong>From:</strong> Ipil, Ormoc City, Leyte, Philippines</li>
               </ul>
+              <h2 class="skills__heading">Education</h2>
               <div class="about__badges">
+                <span class="about__badge" title="Magna Cum Laude">📚 BSCS Graduate</span>
                 <span class="about__badge" title="Magna Cum Laude">🏅 Magna Cum Laude</span>
                 <span class="about__badge" title="Capstone Project of the Year">🏆 Capstone of the Year 2025</span>
                 <span class="about__badge" title="Programmer of the Year">💻 Programmer of the Year 2025</span>

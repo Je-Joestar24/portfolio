@@ -4,6 +4,8 @@
 @import './about/index.css';
 @import './skills/index.css';
 @import './projects/index.css';
+@import './services/index.css';
+@import './footer/index.css';
 
 :root {
 
@@ -39,6 +41,7 @@
   /* button hover (darker blue) */
   --theme-globe: #e3e9f7;
   /* subtle blue accent */
+  --brand-violet: #b388ff;
 
   /* Project Card Theme */
   --card-radius: 1.5rem;
@@ -70,7 +73,7 @@
 
 body {
   font-family: "Poppins", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif;
-  background: linear-gradient(135deg, #181824 0%, #23243a 100%);
+  background: var(--about-bg, #fff);
   background-color: var(--theme-bg);
   color: var(--text-dark);
 }
@@ -89,4 +92,8 @@ li {
 button {
   border: none;
   cursor: pointer;
+}
+
+.footer__brand span {
+  color: var(--brand-violet) !important;
 }

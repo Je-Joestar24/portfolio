@@ -9,9 +9,8 @@ export default class Copyright {
      */
     async getHtml(){
         return `
-            <!-- Copyright -->
-          <div class="footer__copyright">
-            © 2024 ArcVoyage. All rights reserved.
+          <div class="footer__bottom">
+            <span class="footer__copyright">&copy; 2025 Jejomar Parrilla. All rights reserved.</span>
           </div>
         `;
     }

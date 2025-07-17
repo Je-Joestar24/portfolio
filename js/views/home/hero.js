@@ -16,7 +16,7 @@ export default class {
             <section class="intro" role="region" aria-label="Portfolio Introduction">
                 <div class="intro__container intro__container--minimal">
                 <div class="intro__main">
-                    <h1 class="intro__name-minimal animate-fade-in">I am <span>Jejoestar24</span></h1>
+                    <h1 class="intro__name-minimal animate-fade-in">I am <span>Jejomar Parrilla</span></h1>
                     <h2 class="intro__role-minimal animate-slide-in">Full-Stack Web Developer</h2>
                     <hr class="intro__divider" />
                     <div class="intro__contact-area animate-fade-in-delay">

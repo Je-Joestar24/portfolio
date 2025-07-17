@@ -10,11 +10,14 @@ export default class FooterNavigations {
     async getHtml(){
         return `
             <!-- Navigation Links -->
-          <nav class="footer__nav" role="navigation" aria-label="Footer Navigation">
-            <h3 class="footer__nav-title">Quick Links</h3>
-            <a href="#/" class="footer__nav-link" data-link aria-label="Home">Home</a>
-            <a href="#/arcs" class="footer__nav-link" data-link aria-label="Arcs">Arcs</a>
-            <a href="#/about" class="footer__nav-link" data-link aria-label="About">About</a>
+          <nav class="footer__nav" aria-label="Footer Navigation">
+            <ul class="footer__links footer__links--vertical">
+              <li><a href="#home" class="footer__link" aria-label="Home">Home</a></li>
+              <li><a href="#about" class="footer__link" aria-label="About">About</a></li>
+              <li><a href="#projects" class="footer__link" aria-label="Projects">Projects</a></li>
+              <li><a href="#services" class="footer__link" aria-label="Services">Services</a></li>
+              <li><a href="#resume" class="footer__link" aria-label="Resume">Resume</a></li>
+            </ul>
           </nav>
         `;
     }

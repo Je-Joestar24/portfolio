@@ -9,17 +9,9 @@ export default class FooterDescription {
      */
     async getHtml(){
         return `
-            <!-- Description Section -->
-          <div class="footer__description">
-            <a href="/" class="footer__logo" aria-label="ArcVoyage Home">
-              Arc<span>Voyage</span>
-            </a>
-            <p class="footer__text">
-              ArcVoyage is your ultimate guide to the incredible arcs of One
-              Piece, from East Blue to the New World. Dive into the epic journey
-              of the Straw Hat Pirates!
-            </p>
-          </div>
+        <div class="footer__brand-area">
+          <div class="footer__brand">Jejo-<span>Star</span></div>
+        </div>
         `;
     }
 }

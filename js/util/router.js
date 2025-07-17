@@ -5,7 +5,9 @@
  */
 import Home from '../views/home.js';
 import About from '../views/about.js';
-import Arcs from '../views/arcs.js';
+import Projects from '../views/projects.js';
+import Services from '../views/services.js';
+import Resume from '../views/resume.js';
 import { actions } from './state.js';
 
 export class Router {
@@ -16,7 +18,9 @@ export class Router {
         this.routes = [
             { path: '#/', view: Home, id: 'home-nav', message: 'HOME PAGE' },
             { path: '#/about', view: About, id: 'about-nav', message: 'ABOUT PAGE' },
-            { path: '#/arcs', view: Arcs, id: 'arcs-nav', message: 'ARCS PAGE' },
+            { path: '#/projects', view: Projects, id: 'projects-nav', message: 'PROJECTS PAGE' },
+            { path: '#/services', view: Services, id: 'services-nav', message: 'SERVICES PAGE' },
+            { path: '#/resume', view: Resume, id: 'resume-nav', message: 'RESUME PAGE' }
         ];
 
         this.displayArea = document.querySelector(displayID);
