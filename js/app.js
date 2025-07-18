@@ -75,7 +75,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             $('.project-slider').not('.slick-initialized').slick({
                 arrows: false,
                 dots: true,
-                adaptiveHeight: true
+                adaptiveHeight: true,
+                autoplay: true,           // Enable autoplay
+                autoplaySpeed: 2500       // Time between slides in milliseconds (3 seconds)
             });
         }
     };
