@@ -7,7 +7,7 @@ const projects = [
     title: "CrimeGuard",
     desc: "SPA for real-time crime reporting, heatmaps, analytics, and police-citizen coordination. Centralized, secure, and modern.",
     tech: ["Laravel", "Vue.js", "MySQL", "Google Maps API", "Tailwind CSS"],
-    images: ["/assets/crimeguard.png", "/assets/crimeguard.png", "/assets/crimeguard.png"],
+    images: ["assets/crimeguard.png", "assets/crimeguard.png", "assets/crimeguard.png"],
     demo: "",
     repo: "https://github.com/Je-Joestar24/CG-Lmix"
   },
@@ -15,7 +15,7 @@ const projects = [
     title: "DFCO",
     desc: "Devil Fruit Collection Organization: e-commerce SPA for browsing, buying, and managing devil fruit products. Persistent cart, auth, and smooth UI.",
     tech: ["HTML", "CSS", "JavaScript (ES6+)", "LocalStorage"],
-    images: ["/assets/dfco1.png", "/assets/dfco2.png"],
+    images: ["assets/dfco1.png", "assets/dfco2.png"],
     demo: "",
     repo: ""
   },
@@ -23,7 +23,7 @@ const projects = [
     title: "Library Management System",
     desc: "CICTE Library System for book tracking, borrowing, attendance, and reporting. Admin/librarian roles, overdue notifications, and reports.",
     tech: ["PHP", "MySQL", "Bootstrap", "jQuery", "HTML"],
-    images: ["/assets/library1.png", "/assets/library2.png"],
+    images: ["assets/library1.png", "assets/library2.png"],
     demo: "",
     repo: "https://github.com/Je-Joestar24/librarymanagement"
   },
@@ -39,7 +39,7 @@ const projects = [
     title: "ArchVoyage",
     desc: "SPA guide to One Piece arcs. Search, sort, and explore story arcs with fast, accessible UI and local storage caching.",
     tech: ["JavaScript (ES6+)", "CSS3", "HTML5", "LocalStorage"],
-    images: ["/assets/archvoyage1.png", "/assets/archvoyage2.png"],
+    images: ["assets/archvoyage1.png", "assets/archvoyage2.png"],
     demo: "",
     repo: ""
   }
