@@ -23,7 +23,7 @@ const projects = [
     title: "VoyaWeather",
     desc: "Weather-tracking SPA with real-time data, city search, and saved locations. Built with Django (MTV, CBV), form validation, and clean modular code.",
     tech:  ["Django", "Python", "CSS3", "HTML5", "PosgreSQL"],
-    images: ["assets/dfco1.png", "assets/dfco2.png"],
+    images: Array.from({ length: 6 }, (_, i) => `assets/projects_img/jejobook${i + 1}.png`),
     demo: "",
     repo: "https://github.com/Je-Joestar24/VoyaWeather"
   },
@@ -31,7 +31,7 @@ const projects = [
     title: "JejoBookCollector",
     desc: "Modern Django app for book lovers. Collect, manage, and track your reading with a clean, responsive UI.",
     tech: ["Django", "Python", "SQLite", "CSS3", "HTML5"],
-    images: ["/assets/jejobook1.png", "/assets/jejobook2.png"],
+    images: Array.from({ length: 5 }, (_, i) => `assets/projects_img/voyaweather${i + 1}.png`),
     demo: "",
     repo: "https://github.com/Je-Joestar24/jejo_book_collector"
   },
