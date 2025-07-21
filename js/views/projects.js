@@ -7,9 +7,9 @@ const projects = [
     title: "CrimeGuard",
     desc: "SPA for real-time crime reporting, heatmaps, analytics, and police-citizen coordination. Centralized, secure, and modern.",
     tech: ["Laravel", "Vue.js", "MySQL", "Google Maps API", "Tailwind CSS"],
-    images: ["assets/crimeguard.png", "assets/crimeguard.png", "assets/crimeguard.png"],
-    demo: "",
-    repo: "https://github.com/Je-Joestar24/CG-Lmix"
+    images:  Array.from({ length: 7 }, (_, i) => `assets/projects_img/crimeguard${i + 1}.png`),
+    demo: "https://crime-guard.csitcicte.com/",
+    repo: "https://github.com/Je-Joestar24/CrimeGuard"
   },
   {
     title: "DFCO",
@@ -17,7 +17,7 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript (ES6+)", "LocalStorage"],
     images: ["assets/dfco1.png", "assets/dfco2.png"],
     demo: "",
-    repo: ""
+    repo: "https://github.com/Je-Joestar24/DFCO"
   },
   {
     title: "Library Management System",
@@ -28,9 +28,17 @@ const projects = [
     repo: "https://github.com/Je-Joestar24/librarymanagement"
   },
   {
+    title: "VoyaWeather",
+    desc: "Weather-tracking SPA with real-time data, city search, and saved locations. Built with Django (MTV, CBV), form validation, and clean modular code.",
+    tech:  ["Django", "Python", "CSS3", "HTML5", "PosgreSQL"],
+    images: ["assets/dfco1.png", "assets/dfco2.png"],
+    demo: "",
+    repo: "https://github.com/Je-Joestar24/VoyaWeather"
+  },
+  {
     title: "JejoBookCollector",
     desc: "Modern Django app for book lovers. Collect, manage, and track your reading with a clean, responsive UI.",
-    tech: ["Django", "Python", "SQLite", "CSS Grid", "HTML5"],
+    tech: ["Django", "Python", "SQLite", "CSS3", "HTML5"],
     images: ["/assets/jejobook1.png", "/assets/jejobook2.png"],
     demo: "",
     repo: "https://github.com/Je-Joestar24/jejo_book_collector"
@@ -41,7 +49,7 @@ const projects = [
     tech: ["JavaScript (ES6+)", "CSS3", "HTML5", "LocalStorage"],
     images: ["assets/archvoyage1.png", "assets/archvoyage2.png"],
     demo: "",
-    repo: ""
+    repo: "https://github.com/Je-Joestar24/ArchVoyage"
   }
 ];
 
