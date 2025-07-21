@@ -15,15 +15,15 @@ const projects = [
     title: "DFCO",
     desc: "Devil Fruit Collection Organization: e-commerce SPA for browsing, buying, and managing devil fruit products. Persistent cart, auth, and smooth UI.",
     tech: ["HTML", "CSS", "JavaScript (ES6+)", "LocalStorage"],
-    images: ["assets/dfco1.png", "assets/dfco2.png"],
-    demo: "",
+    images: Array.from({ length: 6 }, (_, i) => `assets/projects_img/DFCO${i + 1}.png`),
+    demo: "https://je-joestar24.github.io/DFCO",
     repo: "https://github.com/Je-Joestar24/DFCO"
   },
   {
     title: "Library Management System",
     desc: "CICTE Library System for book tracking, borrowing, attendance, and reporting. Admin/librarian roles, overdue notifications, and reports.",
     tech: ["PHP", "MySQL", "Bootstrap", "jQuery", "HTML"],
-    images: ["assets/library1.png", "assets/library2.png"],
+    images: Array.from({ length: 3 }, (_, i) => `assets/projects_img/librarymanagement${i + 1}.png`),
     demo: "",
     repo: "https://github.com/Je-Joestar24/librarymanagement"
   },
