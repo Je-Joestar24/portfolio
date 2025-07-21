@@ -112,7 +112,7 @@ export default class {
             <div class="short_summary__right">
                 <div class="short_summary__profile-anim">
                 <img
-                    src="assets/profile.jpg"
+                    src="assets/profile.png"
                     alt="Profile placeholder"
                     class="short_summary__profile-img"
                 />
