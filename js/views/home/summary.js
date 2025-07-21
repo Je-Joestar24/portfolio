@@ -66,46 +66,13 @@ export default class {
                         />
                     </svg>
                     </a>
-                    <a
-                    href="https://twitter.com/"
-                    class="short_summary__social short_summary__social--white"
-                    aria-label="Twitter"
-                    target="_blank"
-                    rel="noopener"
-                    >
-                    <svg
-                        width="28"
-                        height="28"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                    >
-                        <path
-                        fill="#181824"
-                        d="M22.46 6c-.77.35-1.6.59-2.47.7a4.3 4.3 0 0 0 1.88-2.38 8.59 8.59 0 0 1-2.72 1.04A4.28 4.28 0 0 0 16.11 4c-2.37 0-4.29 2-4.29 4.44 0 .35.04.7.11 1.03-3.57-.18-6.74-1.98-8.86-4.7-.37.66-.58 1.43-.58 2.25 0 1.54.75 2.9 1.89 3.7-.7-.02-1.36-.22-1.94-.54v.05c0 2.15 1.47 3.94 3.42 4.35-.36.11-.74.17-1.13.17-.28 0-.54-.03-.8-.08.54 1.8 2.12 3.12 3.99 3.15A8.6 8.6 0 0 1 2 19.54c-.64 0-1.27-.04-1.89-.11A12.13 12.13 0 0 0 7.29 21.5c7.55 0 11.68-6.5 11.68-12.13 0-.19 0-.37-.01-.56A8.7 8.7 0 0 0 22.46 6Z"
-                        />
-                    </svg>
+                    <a href="https://www.facebook.com/jejomar.parrilla/" class="intro__contact-link" aria-label="Facebook" target="_blank" rel="noopener">
+                        <svg width="28" height="28" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path fill="#1877F3" d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"/></svg>
                     </a>
-                    <a
-                    href="https://linkedin.com/"
-                    class="short_summary__social short_summary__social--white"
-                    aria-label="LinkedIn"
-                    target="_blank"
-                    rel="noopener"
-                    >
-                    <svg
-                        width="28"
-                        height="28"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                    >
-                        <path
-                        fill="#181824"
-                        d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"
-                        />
-                    </svg>
+                    <a href="https://www.linkedin.com/in/jejomar-parrilla-ab5442239/" class="intro__contact-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                        <svg width="28" height="28" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path fill="#181824" d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg>
                     </a>
+                    
                 </div>
                 </div>
             </div>
