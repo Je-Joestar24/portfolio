@@ -81,6 +81,9 @@
   .nav__links {
     gap: 1.1rem;
   }
+  .nav__link.item {
+    display: none;
+  }
   .nav__link {
     font-size: 0.98rem;
     padding: 0.2rem 0.4rem;

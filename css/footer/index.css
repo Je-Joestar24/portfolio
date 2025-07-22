@@ -145,7 +145,7 @@
   }
   .footer__container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 1.1rem 1rem 0.2rem 1rem;
     gap: 1.2rem;
   }
@@ -157,8 +157,20 @@
     min-width: 0;
     max-width: 100%;
   }
+
   .footer__links {
+    display: flex;
+    flex-wrap: wrap;
     gap: 0.7rem;
+    justify-content: center; /* horizontal centering */
+  }
+  
+  /* Make sure each item takes up enough space so only 3 can fit per row max */
+  .footer__links > * {
+    flex: 1 1 calc(33.333% - 0.7rem); /* three items per row, subtracting the gap */
+    max-width: 150px;                /* ensure they don't get too small */
+    box-sizing: border-box;          /* include padding/border in width */
+    text-align: center;
   }
   .footer__links--vertical {
     gap: 0.3rem;
