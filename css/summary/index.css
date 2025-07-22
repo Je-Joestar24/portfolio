@@ -162,19 +162,30 @@
 }
 
 @media (max-width: 900px) {
+  .short_summary.short_summary--white{
+    padding-top: 0px;
+  }
   .short_summary__container--split {
     flex-direction: column-reverse;
     gap: 2.5rem;
     padding: 0 1rem;
     align-items: center;
   }
-  .short_summary__right {
-    min-width: 140px;
-    min-height: 140px;
+  .short_summary__right,
+  .summary__right {
+    min-width: 0px;
+    min-height: 0px;
+  }
+  .short_summary__right{
+    flex: 1;
+  }
+  .short_summary__findme-title{
+    
   }
   .short_summary__left {
     align-items: center;
     text-align: center;
+    padding: 0 1.5em;
   }
 }
 @media (max-width: 600px) {
@@ -189,6 +200,7 @@
   }
   .short_summary__findme-title {
     font-size: 0.95rem;
+    margin: auto;
   }
   .short_summary__desc {
     font-size: 0.92rem;
