@@ -1,10 +1,19 @@
+/**
+ * AboutView - Renders the About section of the portfolio SPA.
+ * ----------------------------------------------------------
+ * - Displays introduction and skills of the portfolio owner.
+ * - Uses Intro and Skills components for modular content.
+ * - Accessible and semantic HTML structure.
+ *
+ * @module js/views/about.js
+ */
 import AbstractView from "./AbstractView.js";
 
 import Intro from "./about/intro.js";
 import Skills from "./about/skills.js";
 /**
  * AboutView class extends AbstractView to render the About page content.
- * It sets the page title and generates the HTML content for the About page.
+ * Sets the page title and generates the HTML for the about section.
  */
 export default class extends AbstractView{
     /**

@@ -1,6 +1,20 @@
+/**
+ * ServicesView - Renders the Services section of the portfolio SPA.
+ * ---------------------------------------------------------------
+ * - Displays a list of professional services offered.
+ * - Uses a Cards component to render service cards.
+ * - Includes decorative SVG for visual enhancement.
+ * - Accessible and semantic HTML structure.
+ *
+ * @module js/views/services.js
+ */
 import AView from "./AbstractView.js"
 import Cards from "./services/cards.js";
 
+/**
+ * ServicesView class extends AView to render the Services page content.
+ * Sets the page title and generates the HTML for the services section.
+ */
 export default class extends AView {
     constructor() {
         super();
@@ -8,6 +22,10 @@ export default class extends AView {
         this.cards = new Cards();
     }
 
+    /**
+     * Asynchronously generates the HTML content for the Services page.
+     * @returns {Promise<string>} A promise that resolves to the HTML content as a string.
+     */
     async getHtml() {
         return `
         <section class="services-section" aria-label="Services">
