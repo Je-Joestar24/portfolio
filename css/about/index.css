@@ -254,6 +254,11 @@
   .skills__container {
     align-items: center;
   }
+  .about__details{
+    align-items: flex-start;
+    text-align: start;
+    margin-bottom: 2.5rem;
+  }
 }
 @media (max-width: 600px) {
   .about--white {
