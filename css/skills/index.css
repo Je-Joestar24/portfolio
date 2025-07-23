@@ -97,6 +97,18 @@
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1rem;
   }
+  .skills__group{
+    margin-right: auto;
+    margin-left: 1.5em;
+    flex: 1;
+  }
+  .skills__groups{
+    margin-bottom: 2.5em;
+  }
+  .skills__container{
+    margin-top: 2.5rem;
+    gap: 0;
+  }
 }
 
 @media (max-width: 600px) {

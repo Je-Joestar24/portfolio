@@ -225,6 +225,13 @@
 }
 
 @media (max-width: 900px) {
+  .about__decorative, .about__right{
+    margin-bottom: 0px;
+  }
+  .about__right{
+    margin-top: 6em;
+    flex: 1;
+  }
   .about__container--split {
     flex-direction: column-reverse;
     gap: 2.5rem;
@@ -256,7 +263,7 @@
     font-size: 1.05rem;
   }
   .about__container--split {
-    padding: 1rem 0 0.5rem 0;
+    padding: 1rem .5em 0.5rem .5em;
   }
   .about__right {
     min-width: 60px;
