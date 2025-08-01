@@ -50,7 +50,7 @@ PORTFOLIO/
 ## 👤 Author
 **Jejomar Parrilla**  
 Ormoc City, Philippines  
-📧 jpar1252003@gmail.com  
+📧 parrillajejomar@gmail.com  
 [GitHub](https://github.com/Je-Joestar24)
 
 ## 📝 License

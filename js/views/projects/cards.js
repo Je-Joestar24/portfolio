@@ -42,20 +42,20 @@ export default class {
             repo: "https://github.com/Je-Joestar24/jejo_book_collector"
         },
         {
+            title: "JRF",
+            desc: "Modern recipe discovery SPA. Search, save, and manage recipes with real-time results, user auth, and responsive design. Powered by Spoonacular API and built for scalability and maintainability.",
+            tech: ["Vue 3 (Composition API)", "TypeScript", "Pinia", "Vue Router 4", "Vite", "Axios", "localStorage", "sessionStorage"],
+            images: Array.from({ length: 3 }, (_, i) => `assets/projects_img/JRF${i + 1}.png`),
+            demo: "",
+            repo: "https://github.com/Je-Joestar24/jejo_recipe_finder"
+        },
+        {
             title: "Library Management System",
             desc: "CICTE Library System for book tracking, borrowing, attendance, and reporting. Admin/librarian roles, overdue notifications, and reports.",
             tech: ["PHP", "MySQL", "Bootstrap", "jQuery", "HTML"],
             images: Array.from({ length: 3 }, (_, i) => `assets/projects_img/librarymanagement${i + 1}.png`),
             demo: "",
             repo: "https://github.com/Je-Joestar24/librarymanagement"
-        },
-        {
-            title: "ArchVoyage",
-            desc: "SPA guide to One Piece arcs. Search, sort, and explore story arcs with fast, accessible UI and local storage caching.",
-            tech: ["JavaScript (ES6+)", "CSS3", "HTML5", "LocalStorage"],
-            images: Array.from({ length: 4 }, (_, i) => `assets/projects_img/archvoyage${i + 1}.png`),
-            demo: "https://je-joestar24.github.io/ArchVoyage/",
-            repo: "https://github.com/Je-Joestar24/ArchVoyage"
         }
     ];
 

@@ -13,7 +13,7 @@ export default class {
               <ul class="about__details">
                 <li><strong>Age:</strong> 22</li>
                 <li><strong>Hobbies:</strong> Programming, solving puzzles and playing games</li>
-                <li><strong>Email:</strong> <a href="mailto:jpar1252003@gmail.com">jpar1252003@gmail.com</a></li>
+                <li><strong>Email:</strong> <a href="mailto:parrillajejomar@gmail.com">parrillajejomar@gmail.com</a></li>
                 <li><strong>From:</strong> Ipil, Ormoc City, Leyte, Philippines</li>
               </ul>
               <h2 class="skills__heading">Education</h2>
