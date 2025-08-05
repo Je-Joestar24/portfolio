@@ -1,5 +1,11 @@
+import { projects } from "./projects.js";
+
 export default class {
 
+    constructor(){
+        
+        this.projects = projects
+    }
     sliderHTML(imgs) {
         return `
     <div class="project-slider">
@@ -8,56 +14,6 @@ export default class {
     `;
     }
 
-    projects = [
-        {
-            title: "CrimeGuard",
-            desc: "SPA for real-time crime reporting, heatmaps, analytics, and police-citizen coordination. Centralized, secure, and modern.",
-            tech: ["Laravel", "Vue.js", "MySQL", "Google Maps API", "Tailwind CSS"],
-            images: Array.from({ length: 7 }, (_, i) => `assets/projects_img/crimeguard${i + 1}.png`),
-            demo: "https://crime-guard.csitcicte.com/",
-            repo: "https://github.com/Je-Joestar24/CrimeGuard"
-        },
-        {
-            title: "DFCO",
-            desc: "Devil Fruit Collection Organization: e-commerce SPA for browsing, buying, and managing devil fruit products. Persistent cart, auth, and smooth UI.",
-            tech: ["HTML", "CSS", "JavaScript (ES6+)", "LocalStorage"],
-            images: Array.from({ length: 6 }, (_, i) => `assets/projects_img/DFCO${i + 1}.png`),
-            demo: "https://je-joestar24.github.io/DFCO",
-            repo: "https://github.com/Je-Joestar24/DFCO"
-        },
-        {
-            title: "VoyaWeather",
-            desc: "Weather-tracking SPA with real-time data, city search, and saved locations. Built with Django (MTV, CBV), form validation, and clean modular code.",
-            tech: ["Django", "Python", "CSS3", "HTML5", "PosgreSQL"],
-            images: Array.from({ length: 6 }, (_, i) => `assets/projects_img/jejobook${i + 1}.png`),
-            demo: "",
-            repo: "https://github.com/Je-Joestar24/VoyaWeather"
-        },
-        {
-            title: "JejoBookCollector",
-            desc: "Modern Django app for book lovers. Collect, manage, and track your reading with a clean, responsive UI.",
-            tech: ["Django", "Python", "SQLite", "CSS3", "HTML5"],
-            images: Array.from({ length: 5 }, (_, i) => `assets/projects_img/voyaweather${i + 1}.png`),
-            demo: "",
-            repo: "https://github.com/Je-Joestar24/jejo_book_collector"
-        },
-        {
-            title: "JRF",
-            desc: "Modern recipe discovery SPA. Search, save, and manage recipes with real-time results, user auth, and responsive design. Powered by Spoonacular API and built for scalability and maintainability.",
-            tech: ["Vue 3 (Composition API)", "TypeScript", "Pinia", "Vue Router 4", "Vite", "Axios", "localStorage", "sessionStorage"],
-            images: Array.from({ length: 3 }, (_, i) => `assets/projects_img/JRF${i + 1}.png`),
-            demo: "",
-            repo: "https://github.com/Je-Joestar24/jejo_recipe_finder"
-        },
-        {
-            title: "Library Management System",
-            desc: "CICTE Library System for book tracking, borrowing, attendance, and reporting. Admin/librarian roles, overdue notifications, and reports.",
-            tech: ["PHP", "MySQL", "Bootstrap", "jQuery", "HTML"],
-            images: Array.from({ length: 3 }, (_, i) => `assets/projects_img/librarymanagement${i + 1}.png`),
-            demo: "",
-            repo: "https://github.com/Je-Joestar24/librarymanagement"
-        }
-    ];
 
     async getHtml() {
         return `
