@@ -36,7 +36,7 @@ export const projects = [
             desc: "Modern recipe discovery SPA. Search, save, and manage recipes with real-time results, user auth, and responsive design. Powered by Spoonacular API and built for scalability and maintainability.",
             tech: ["Vue 3 (Composition API)", "TypeScript", "Pinia", "Vue Router 4", "Vite", "Axios", "localStorage", "sessionStorage"],
             images: Array.from({ length: 3 }, (_, i) => `assets/projects_img/JRF${i + 1}.png`),
-            demo: "",
+            demo: "https://je-joestar24.github.io/jejorecipefinder",
             repo: "https://github.com/Je-Joestar24/jejo_recipe_finder"
         },
         {
