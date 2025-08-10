@@ -8,6 +8,14 @@ export const projects = [
             repo: "https://github.com/Je-Joestar24/CrimeGuard"
         },
         {
+            title: "JRF",
+            desc: "Modern recipe discovery SPA. Search, save, and manage recipes with real-time results, user auth, and responsive design. Powered by Spoonacular API and built for scalability and maintainability.",
+            tech: ["Vue 3 (Composition API)", "TypeScript", "Pinia", "Vue Router 4", "Vite", "Axios", "localStorage", "sessionStorage"],
+            images: Array.from({ length: 3 }, (_, i) => `assets/projects_img/JRF${i + 1}.png`),
+            demo: "https://je-joestar24.github.io/jejorecipefinder",
+            repo: "https://github.com/Je-Joestar24/jejo_recipe_finder"
+        },
+        {
             title: "DFCO",
             desc: "Devil Fruit Collection Organization: e-commerce SPA for browsing, buying, and managing devil fruit products. Persistent cart, auth, and smooth UI.",
             tech: ["HTML", "CSS", "JavaScript (ES6+)", "LocalStorage"],
@@ -17,7 +25,7 @@ export const projects = [
         },
         {
             title: "VoyaWeather",
-            desc: "Weather-tracking SPA with real-time data, city search, and saved locations. Built with Django (MTV, CBV), form validation, and clean modular code.",
+            desc: "Weather-tracking MTV with real-time data, city search, and saved locations. Built with Django (MTV, CBV), form validation, and clean modular code.",
             tech: ["Django", "Python", "CSS3", "HTML5", "PosgreSQL"],
             images: Array.from({ length: 5 }, (_, i) => `assets/projects_img/voyaweather${i + 1}.png`),
             demo: "",
@@ -25,19 +33,11 @@ export const projects = [
         },
         {
             title: "JejoBookCollector",
-            desc: "Modern Django app for book lovers. Collect, manage, and track your reading with a clean, responsive UI.",
+            desc: "Modern Django MTV app for book lovers. Collect, manage, and track your reading with a clean, responsive UI.",
             tech: ["Django", "Python", "SQLite", "CSS3", "HTML5"],
             images: Array.from({ length: 6 }, (_, i) => `assets/projects_img/jejobook${i + 1}.png`),
             demo: "",
             repo: "https://github.com/Je-Joestar24/jejo_book_collector"
-        },
-        {
-            title: "JRF",
-            desc: "Modern recipe discovery SPA. Search, save, and manage recipes with real-time results, user auth, and responsive design. Powered by Spoonacular API and built for scalability and maintainability.",
-            tech: ["Vue 3 (Composition API)", "TypeScript", "Pinia", "Vue Router 4", "Vite", "Axios", "localStorage", "sessionStorage"],
-            images: Array.from({ length: 3 }, (_, i) => `assets/projects_img/JRF${i + 1}.png`),
-            demo: "https://je-joestar24.github.io/jejorecipefinder",
-            repo: "https://github.com/Je-Joestar24/jejo_recipe_finder"
         },
         {
             title: "Library Management System",
