@@ -7,6 +7,7 @@ export default class {
                 { name: 'HTML5', img: 'html.png' },
                 { name: 'CSS3', img: 'css.png' },
                 { name: 'JavaScript', img: 'js.png' },
+                { name: 'Typescript', img: 'typescript.png' },
                 { name: 'Vue.js', img: 'vue.png' },
                 { name: 'Tailwind CSS', img: 'tailwind.png' },
             ]
