@@ -1,41 +1,60 @@
 
 export default class {
-    skills = [
-        {
-            group: 'Frontend',
-            items: [
-                { name: 'HTML5', img: 'html.png' },
-                { name: 'CSS3', img: 'css.png' },
-                { name: 'JavaScript', img: 'js.png' },
-                { name: 'Typescript', img: 'typescript.png' },
-                { name: 'Vue.js', img: 'vue.png' },
-                { name: 'Tailwind CSS', img: 'tailwind.png' },
-            ]
-        },
-        {
-            group: 'Backend',
-            items: [
-                { name: 'PHP', img: 'php.png' },
-                { name: 'Python', img: 'python.png' },
-                { name: 'Django', img: 'django.png' },
-                { name: 'Laravel', img: 'laravel.png' },
-                { name: 'MySQL', img: 'sql.png' },
-                { name: 'PostgreSQL', img: 'psql.png' },
-            ]
-        },
-        {
-            group: 'Tools',
-            items: [
-                { name: 'Git & GitHub', img: 'gitgithub.png' },
-                { name: 'Docker', img: 'docker.png' },
-                { name: 'Redmine', img: 'redmine.png' },
-                { name: 'Virtual Studio Code', img: 'vscode.png' },
-            ]
-        }
-    ];
+  skills = [
+    {
+      group: 'Frontend',
+      items: [
+        { name: 'HTML5', img: 'html.png' },
+        { name: 'CSS3', img: 'css.png' },
+        { name: 'JavaScript (ES6+)', img: 'js.png' },
+        { name: 'TypeScript', img: 'typescript.png' },
+        { name: 'Vue.js (Composition & Options API)', img: 'vue.png' },
+        { name: 'Tailwind CSS', img: 'tailwind.png' },
+      ]
+    },
+    {
+      group: 'Backend',
+      items: [
+        { name: 'PHP 8+', img: 'php.png' },
+        { name: 'Laravel (10/12)', img: 'laravel.png' },
+        { name: 'Python', img: 'python.png' },
+        { name: 'Django', img: 'django.png' },
+        { name: 'Java (OOP/DSA)', img: 'java.png' },
+        { name: 'MySQL / MariaDB', img: 'sql.png' },
+        { name: 'PostgreSQL', img: 'psql.png' },
+      ]
+    },
+    {
+      group: 'Tools & DevOps',
+      items: [
+        { name: 'Git (GitHub & GitLab)', img: 'gitgithub.png' },
+        { name: 'Docker', img: 'docker.png' },
+        { name: 'Redmine (Agile/Sprints)', img: 'redmine.png' },
+        { name: 'VS Code', img: 'vscode.png' },
+        { name: 'Apache / Nginx', img: 'nginx.png' },
+      ]
+    },
+    {
+      group: 'AI & SDKs',
+      items: [
+        { name: 'Groq API (LLAMA Models)', img: 'groq.png' },
+        { name: 'Matterport SDK', img: 'matterport.png' },
+        { name: 'Three.js', img: 'threejs.png' },
+      ]
+    },
+    {
+      group: 'External APIs',
+      items: [
+        { name: 'Google Maps API', img: 'maps.png' },
+        { name: 'Spoonacular API', img: 'spoonacular.png' },
+        { name: 'Google Books API', img: 'books.png' },
+        { name: 'LocalStorage (Web APIs)', img: 'localstorage.svg' },
+      ]
+    }
+  ];
 
-    async getHtml() {
-        return `
+  async getHtml() {
+    return `
         <section class="skills skills--white" aria-label="Skills">
           <div class="skills__container">
             <h2 class="skills__heading">Skills</h2>
@@ -54,5 +73,5 @@ export default class {
           </div>
         </section>
         `;
-    }
+  }
 }
