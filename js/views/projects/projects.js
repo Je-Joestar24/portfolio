@@ -39,7 +39,7 @@ export const projects = [
         tech: ["Django", "OpenWeather API", "Python", "CSS3", "HTML5", "PosgreSQL"],
         images: Array.from({ length: 5 }, (_, i) => `assets/projects_img/voyaweather${i + 1}.png`),
         demo: "",
-        repo: "https://github.com/Je-Joestar24/VoyaWeather"
+        repo: "https://github.com/Je-Joestar24/voya_weather"
     },
     {
         title: "JejoBookCollector",
