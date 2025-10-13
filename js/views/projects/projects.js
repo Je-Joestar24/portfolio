@@ -26,20 +26,13 @@ export const projects = [
     },
     {
         title: "JRF",
-        desc: "Modern recipe discovery SPA. Search, save, and manage recipes with real-time results, user auth, and responsive design. Powered by Spoonacular API and built for scalability and maintainability.",
-        tech: ["Vue 3 (Composition API)", "TypeScript", "Spoonacular API", "Pinia", "localStorage", "sessionStorage"],
+        desc: "Modern recipe discovery SPA & MVC. Search, save, and manage recipes with real-time results, user auth, and responsive design. Powered by Spoonacular API and built for scalability and maintainability.",
+        tech: ["Laravel 11","Vue 3 (Composition API)", "CSS 3", "TypeScript", "Spoonacular API", "Sanctum", "Pinia", "sessionStorage"],
         images: Array.from({ length: 3 }, (_, i) => `assets/projects_img/JRF${i + 1}.png`),
         demo: "https://je-joestar24.github.io/jejorecipefinder",
         repo: "https://github.com/Je-Joestar24/jejo_recipe_finder"
     },
-/*     {
-        title: "DFCO",
-        desc: "Devil Fruit Collection Organization: e-commerce SPA for browsing, buying, and managing devil fruit products. Persistent cart, auth, and smooth UI.",
-        tech: ["HTML", "CSS", "JavaScript (ES6+)", "LocalStorage"],
-        images: Array.from({ length: 6 }, (_, i) => `assets/projects_img/DFCO${i + 1}.png`),
-        demo: "https://je-joestar24.github.io/DFCO",
-        repo: "https://github.com/Je-Joestar24/DFCO"
-    }, */
+
     {
         title: "VoyaWeather",
         desc: "Weather-tracking MTV with real-time data, city search, and saved locations. Built with Django (MTV, CBV), form validation, and clean modular code.",
@@ -63,5 +56,22 @@ export const projects = [
         images: Array.from({ length: 3 }, (_, i) => `assets/projects_img/librarymanagement${i + 1}.png`),
         demo: "",
         repo: "https://github.com/Je-Joestar24/librarymanagement"
-    }
+    },
+    {
+        title: "DFCO",
+        desc: "Devil Fruit Collection Organization: e-commerce SPA for browsing, buying, and managing devil fruit products. Persistent cart, auth, and smooth UI.",
+        tech: ["HTML", "CSS", "JavaScript (ES6+)", "LocalStorage"],
+        images: Array.from({ length: 6 }, (_, i) => `assets/projects_img/DFCO${i + 1}.png`),
+        demo: "https://je-joestar24.github.io/DFCO",
+        repo: "https://github.com/Je-Joestar24/DFCO"
+    },
+    {
+        title: "ArcVoyage",
+        desc: "Interactive Single Page Application (SPA) guide to One Piece story arcs, featuring arc exploration, search & sort, detailed summaries, and responsive design.",
+        tech: ["HTML5", "CSS3", "JavaScript (ES6+)", "LocalStorage"],
+        images: Array.from({ length: 6 }, (_, i) => `assets/projects_img/ArcVoyage${i + 1}.png`),
+        demo: "https://je-joestar24.github.io/ArcVoyage",
+        repo: "https://github.com/Je-Joestar24/ArcVoyage"
+    },
+
 ];
