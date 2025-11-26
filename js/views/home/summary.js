@@ -24,23 +24,23 @@ export default class {
                 </h2>
                 <div class="short_summary__content">
                 <p class="short_summary__desc">
-                    I developed a deep interest in programming and discovered just
-                    how expansive the field truly is. One key lesson I've learned is
-                    that by focusing on the fundamentals, you can build the
-                    foundation to become highly effective.
+                    With years of hands-on experience in full-stack development, I specialize in building 
+                    scalable, efficient applications that prioritize clean architecture and maintainable code. 
+                    My approach centers on writing quality, performant solutions that solve real-world problems 
+                    while ensuring long-term maintainability.
                 </p>
                 <p class="short_summary__desc short_summary__desc--highlight">
-                    I am fluent with
-                    <span class="short_summary__lang">JavaScript</span>,
-                    <span class="short_summary__lang">PHP</span>, and
-                    <span class="short_summary__lang">Python</span>.
+                    I excel in modern JavaScript ecosystems, with deep expertise in the
+                    <span class="short_summary__lang">MERN stack</span> (MongoDB, Express.js, React, Node.js) 
+                    and full-stack development using
+                    <span class="short_summary__lang">Laravel</span> with
+                    <span class="short_summary__lang">Vue.js</span>.
                 </p>
                 <p class="short_summary__desc">
-                    Whenever possible, I also want to contribute my skills on
-                    frameworks and I am really used to
-                    <span class="short_summary__framework">Vue</span>,
-                    <span class="short_summary__framework">Laravel</span>, and
-                    <span class="short_summary__framework">Django</span> frameworks.
+                    I'm passionate about crafting efficient, production-ready applications with a focus on 
+                    code quality, performance optimization, and best practices. Whether it's building RESTful APIs, 
+                    implementing complex state management, or optimizing database queries, I deliver solutions 
+                    that are both robust and scalable.
                 </p>
                 </div>
                 <div class="short_summary__findme">

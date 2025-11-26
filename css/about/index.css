@@ -182,46 +182,101 @@
   gap: 0.7rem;
   flex-wrap: wrap;
 }
-.skills__icon {
+
+/* Skill Icon Wrapper */
+.skills__icon-wrapper {
+  position: relative;
   width: 44px;
   height: 44px;
-  object-fit: contain;
-  filter: grayscale(0.1) brightness(0.95);
-  transition: filter 0.2s, transform 0.2s;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-}
-.skills__icon:hover,
-.skills__icon:focus {
-  filter: drop-shadow(0 0 6px #b388ff) brightness(1.1);
-  transform: scale(1.12);
+  transition: transform 0.3s ease, z-index 0s;
+  z-index: 1;
 }
 
-/* Tooltip effect for skill name */
-.skills__icon[data-skill]:hover::after,
-.skills__icon[data-skill]:focus::after {
-  opacity: 1;
-  transform: translateY(-10px) scale(1);
-  pointer-events: auto;
+.skills__icon-wrapper:hover {
+  transform: scale(1.1);
+  z-index: 1000;
 }
-.skills__icon::after {
-  content: attr(data-skill);
+
+/* Skill Icon Image */
+.skills__icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: grayscale(0.1) brightness(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease, filter 0.3s ease;
   position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.skills__icon-wrapper:hover .skills__icon {
+  z-index: 1000;
+}
+
+.skills__icon-wrapper:hover .skills__icon {
+  opacity: 0;
+  transform: scale(0.8) rotate(5deg);
+  filter: grayscale(1) brightness(0.5);
+}
+
+/* Skill Name Text */
+.skills__icon-name {
+  position: absolute;
+  top: 50%;
   left: 50%;
-  top: -18px;
-  transform: translateX(-50%) translateY(0) scale(0.95);
-  background: #181824ee;
-  color: #fff;
-  font-size: 0.85rem;
-  font-weight: 500;
-  padding: 2px 10px;
-  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(0.8);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--theme-primary);
+  text-align: center;
   white-space: nowrap;
   opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
   pointer-events: none;
-  transition: opacity 0.18s, transform 0.18s;
-  z-index: 10;
-  box-shadow: 0 2px 8px #18182433;
+  z-index: 1001;
+  padding: 2px 4px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(48, 79, 254, 0.2);
+  border: 1px solid rgba(48, 79, 254, 0.1);
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.skills__icon-wrapper:hover .skills__icon-name {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Animation for smooth transition */
+@keyframes skillFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes skillFadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.8) rotate(5deg);
+  }
 }
 
 @media (max-width: 900px) {
@@ -281,9 +336,20 @@
   .skills__heading {
     font-size: 1.05rem;
   }
-  .skills__icon {
+  .skills__icon-wrapper {
     width: 32px;
     height: 32px;
+  }
+  
+  .skills__icon {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .skills__icon-name {
+    font-size: 0.6rem;
+    max-width: 100px;
+    padding: 1px 3px;
   }
 }
 

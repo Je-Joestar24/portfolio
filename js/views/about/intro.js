@@ -8,7 +8,7 @@ export default class {
               <h2 class="about__heading">About Me</h2>
               <h3 class="about__name">My name is <span>Jejomar Parrilla</span> and I am a full stack developer.</h3>
               <p class="about__summary">
-                I have been working on web designing and web development for 3 years through my journey on my capstone development, OJT at ROK & web development hobby. Constantly updating the technologies I already master, but also looking to learn new technologies to enrich my skills and improve my good practices as a developer.
+                Full-stack developer with 3+ years of experience building scalable web applications. Currently working as a Freelance Full Stack Developer at Atula Solutions, specializing in MERN stack and Laravel/Vue.js ecosystems. Passionate about writing efficient, maintainable code and delivering production-ready solutions.
               </p>
               <ul class="about__details">
                 <li><strong>Age:</strong> 22</li>

@@ -39,4 +39,14 @@ export default class extends AbstractView{
       </div>
         `;
     }
+
+    /**
+     * Lifecycle method called after view is mounted.
+     * Binds event handlers for interactive elements.
+     */
+    async bindAll() {
+        if (this.skills && this.skills.bindAll) {
+            await this.skills.bindAll();
+        }
+    }
 }
