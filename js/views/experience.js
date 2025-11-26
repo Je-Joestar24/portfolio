@@ -1,42 +1,53 @@
 /**
- * AboutView - Renders the About section of the portfolio SPA.
- * ----------------------------------------------------------
- * - Displays introduction and skills of the portfolio owner.
- * - Uses Intro and Skills components for modular content.
+ * ExperienceView - Renders the Experience section of the portfolio SPA.
+ * --------------------------------------------------------------------
+ * - Displays work experience organized by company and project.
+ * - Uses Summary and Experiences components for modular content.
+ * - Features timeline layout with expandable project descriptions.
  * - Accessible and semantic HTML structure.
  *
  * @module js/views/experience.js
  */
 import AbstractView from "./AbstractView.js";
+import Summary from "./experience/summary.js";
+import Experiences from "./experience/experiences.js";
 
-import Intro from "./about/intro.js";
-import Skills from "./about/skills.js";
 /**
- * AboutView class extends AbstractView to render the About page content.
- * Sets the page title and generates the HTML for the about section.
+ * ExperienceView class extends AbstractView to render the Experience page content.
+ * Sets the page title and generates the HTML for the experience section.
  */
-export default class extends AbstractView{
+export default class extends AbstractView {
     /**
-     * Constructor for AboutView.
+     * Constructor for ExperienceView.
      * Calls the superclass constructor and sets the page title.
      */
-    constructor(){
+    constructor() {
         super();
         this.setTitle("Jejoestar | Experience");
-        this.intro = new Intro();
-        this.skills = new Skills();
+        this.summary = new Summary();
+        this.experiences = new Experiences();
     }
 
     /**
-     * Asynchronously generates the HTML content for the About page.
+     * Asynchronously generates the HTML content for the Experience page.
      * @returns {Promise<string>} A promise that resolves to the HTML content as a string.
      */
-    async getHtml(){
+    async getHtml() {
         return `
-      <div class="app__about">
-        ${await this.intro.getHtml()}
-        ${await this.skills.getHtml()}
-      </div>
+            <section class="experience-section" aria-label="Work Experience">
+                ${await this.summary.getHtml()}
+                ${await this.experiences.getHtml()}
+            </section>
         `;
+    }
+
+    /**
+     * Lifecycle method called after view is mounted.
+     * Binds event handlers for interactive elements.
+     */
+    async bindAll() {
+        if (this.experiences && this.experiences.bindAll) {
+            await this.experiences.bindAll();
+        }
     }
 }

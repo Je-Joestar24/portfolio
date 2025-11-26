@@ -7,6 +7,7 @@ import Home from '../views/home.js';
 import About from '../views/about.js';
 import Projects from '../views/projects.js';
 import Services from '../views/services.js';
+import Experience from '../views/experience.js';
 import { actions } from './state.js';
 
 export class Router {
@@ -18,6 +19,7 @@ export class Router {
             { path: '#/', view: Home, id: 'home-nav', message: 'HOME PAGE' },
             { path: '#/about', view: About, id: 'about-nav', message: 'ABOUT PAGE' },
             { path: '#/projects', view: Projects, id: 'projects-nav', message: 'PROJECTS PAGE' },
+            { path: '#/experience', view: Experience, id: 'experience-nav', message: 'EXPERIENCE PAGE' },
             { path: '#/services', view: Services, id: 'services-nav', message: 'SERVICES PAGE' }
         ];
 

@@ -19,6 +19,12 @@ export default class{
         target: ''
       },
       {
+        href: '#/experience',
+        label: 'Experience',
+        svg: '<svg class="nav__icon" viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+        target: ''
+      },
+      {
         href: '#/services',
         label: 'Services',
         svg: '<svg class="nav__icon" viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M12 2v20M2 12h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>',

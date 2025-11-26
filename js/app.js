@@ -45,18 +45,18 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Slick slider initialization after each route
     const initSlick = () => {
         if (window.$ && typeof $.fn.slick === 'function') {
-            $('.project-slider').not('.slick-initialized').slick({
+            $('.project-slider, .experience-slider').not('.slick-initialized').slick({
                 arrows: false,
                 dots: true,
                 adaptiveHeight: true,
                 autoplay: true,           // Enable autoplay
-                autoplaySpeed: 2500       // Time between slides in milliseconds (3 seconds)
+                autoplaySpeed: 2500       // Time between slides in milliseconds (2.5 seconds)
             });
         }
     };
 
     /**
-     * Initializes the Slick slider for project carousels if present in the DOM.
+     * Initializes the Slick slider for project and experience carousels if present in the DOM.
      * Ensures that the slider is only initialized once per element.
      */
     const observer = new MutationObserver(() => {
