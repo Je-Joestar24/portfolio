@@ -47,7 +47,7 @@ export const companies = [
                 title: "Architwin Lib",
                 shortDesc: "3D visualization library with enhanced mobile responsiveness, dynamic tag behavior, and panel movement.",
                 fullDesc: "Contributed to three major projects (Azusa, Architwin Basic, Architwin Lib) focused on 3D visualization, feature development, and system optimization using Vue.js, TypeScript, Web2py (DAL), Matterport SDK, and Three.js. Developed and enhanced frontend features in Vue.js, improving responsiveness and UX across devices. Enhanced mobile responsiveness, dynamic tag behavior, and panel movement for Architwin Lib.",
-                images: Array.from({ length: 4 }, (_, i) => `assets/experience_img/architwin${i + 1}.png`),
+                images: Array.from({ length: 3 }, (_, i) => `assets/experience_img/library${i + 1}.png`),
                 achievements: [
                     "Enhanced mobile responsiveness across devices",
                     "Improved dynamic tag behavior and panel movement",
