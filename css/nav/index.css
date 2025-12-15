@@ -36,7 +36,7 @@
 .nav__links {
   display: flex;
   align-items: center;
-  gap: 2.1rem;
+  gap: 1.6rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -71,17 +71,6 @@
 .nav__link.active {
   color: var(--text-light);
   background: rgba(48, 79, 254, 0.25);
-}
-
-.nav__link.active::after {
-  content: '';
-  position: absolute;
-  left: 16px;
-  right: 16px;
-  bottom: 2px;
-  height: 2px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--brand-violet), var(--theme-secondary));
 }
 .nav__icon {
   display: inline-block;
