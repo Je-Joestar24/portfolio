@@ -4,7 +4,7 @@ export const projects = [
         desc: "SPA for real-time crime reporting, heatmaps, analytics, and police-citizen coordination. Centralized, secure, and modern.",
         tech: ["Laravel", "Vue 3 (Options API)", "Vuex", "MySQL", "Google Maps API", "Tailwind CSS"],
         images: Array.from({ length: 7 }, (_, i) => `assets/projects_img/crimeguard${i + 1}.png`),
-        demo: "https://crime-guard.csitcicte.com/",
+        demo: "",
         repo: "https://github.com/Je-Joestar24/CrimeGuard"
     },
     {

@@ -62,6 +62,7 @@ export default class {
         { name: 'Spoonacular API', img: 'spoonacular.png' },
         { name: 'Google Books API', img: 'books.png' },
         { name: 'LocalStorage (Web APIs)', img: 'localstorage.svg' },
+        { name: 'Stripe', img: 'stripe.png' },
       ]
     }
   ];

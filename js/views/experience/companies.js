@@ -20,7 +20,7 @@ export const companies = [
                     "Developed triage, diagnosis, and admin modules",
                     "Created scalable structure ready for payment integration"
                 ],
-                tech: ["MongoDB", "Expres.js", "React.js", "Node.js", "RESTful API", "Role-based Permissions"]
+                tech: ["MongoDB", "Expres.js", "React.js", "Node.js", "RESTful API", "Role-based Permissions", "Stripe"]
             },
             {
                 title: "Child Care Management Platform",

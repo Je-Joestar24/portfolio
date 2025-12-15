@@ -4,14 +4,14 @@
   top: 0;
   left: 0;
   z-index: 100;
-  background: rgba(24, 24, 36, 0.82);
-  box-shadow: none;
+  background: linear-gradient(90deg, rgba(24, 24, 36, 0.96), rgba(24, 24, 36, 0.92));
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
   min-height: 60px;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
 }
 .nav__container {
   width: 100%;
@@ -23,20 +23,20 @@
   padding: 0.5rem 2.5rem;
 }
 .nav__brand {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 700;
   color: #fff;
   letter-spacing: 0.01em;
   user-select: none;
 }
 .nav__brand span {
-  color: #b388ff;
+  color: var(--brand-violet);
   font-weight: 800;
 }
 .nav__links {
   display: flex;
   align-items: center;
-  gap: 2.2rem;
+  gap: 2.1rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -46,15 +46,15 @@
   align-items: center;
   gap: 0.5rem;
   color: #fff;
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   font-weight: 500;
   text-decoration: none;
   background: none;
   border: none;
   outline: none;
   padding: 0.3rem 0.7rem;
-  border-radius: 0.3rem;
-  transition: color 0.18s, background 0.18s;
+  border-radius: 999px;
+  transition: color 0.18s, background 0.18s, transform 0.18s;
   position: relative;
 }
 .nav__link--icon {
@@ -62,8 +62,26 @@
 }
 .nav__link:hover,
 .nav__link:focus {
-  color: #b388ff;
+  color: var(--brand-violet);
   background: rgba(179, 136, 255, 0.08);
+  transform: translateY(-1px);
+}
+
+/* Active link state */
+.nav__link.active {
+  color: var(--text-light);
+  background: rgba(48, 79, 254, 0.25);
+}
+
+.nav__link.active::after {
+  content: '';
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 2px;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--brand-violet), var(--theme-secondary));
 }
 .nav__icon {
   display: inline-block;
@@ -77,20 +95,20 @@
 }
 @media (max-width: 900px) {
   .nav__container {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.2rem;
   }
   .nav__brand {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   .nav__links {
-    gap: 1.1rem;
+    gap: 1.2rem;
   }
   .nav__links.mobile{
     position: fixed;
     top: 60px;
     left: 0px;
     z-index: 50;
-    background: rgba(24, 24, 36, 0.82);
+    background: rgba(24, 24, 36, 0.96);
     gap: 0;
     justify-content: space-between;
     width: 100vw;
@@ -117,7 +135,7 @@
     display: none;
   }
   .nav__link {
-    font-size: 0.98rem;
-    padding: 0.2rem 0.4rem;
+    font-size: 0.95rem;
+    padding: 0.25rem 0.6rem;
   }
 }

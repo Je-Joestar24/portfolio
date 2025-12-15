@@ -24,6 +24,11 @@ export default class FooterNavigations {
         target: ''
       },
       {
+        label: 'Experience',
+        href: '#/experience',
+        target: ''
+      },
+      {
         label: 'Services',
         href: '#/services',
         target: ''
