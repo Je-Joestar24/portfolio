@@ -69,9 +69,9 @@ export const projects = [
         title: "ArcVoyage",
         desc: "Interactive Single Page Application (SPA) guide to One Piece story arcs, featuring arc exploration, search & sort, detailed summaries, and responsive design.",
         tech: ["HTML5", "CSS3", "JavaScript (ES6+)", "LocalStorage"],
-        images: Array.from({ length: 6 }, (_, i) => `assets/projects_img/archvoyage${i + 1}.png`),
-        demo: "https://je-joestar24.github.io/ArcVoyage",
-        repo: "https://github.com/Je-Joestar24/ArcVoyage"
+        images: Array.from({ length: 4 }, (_, i) => `assets/projects_img/archvoyage${i + 1}.png`),
+        demo: "https://je-joestar24.github.io/ArchVoyage",
+        repo: "https://github.com/Je-Joestar24/ArchVoyage"
     },
 
 ];
