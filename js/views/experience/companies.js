@@ -4,6 +4,27 @@
  */
 export const companies = [
     {
+        name: "RiseUpKids (via Upwork)",
+        location: "Remote",
+        position: "Full Stack Developer",
+        period: "2025",
+        projects: [
+            {
+                title: "Rise Up Kids — Child Learning Management System (MVP)",
+                shortDesc: "Child-friendly LMS built from scratch in one month with MERN stack, role-based access (Admin, Teacher, Parent, Child), and multiple third-party integrations.",
+                fullDesc: "Delivered a full MVP of a child learning management system for RiseUpKids, designed and built custom from scratch within one month. The platform serves three core users: Admin (Users, content and lesson management), Admin (content and lesson management), Parent (child accounts and progress tracking), and Child (guided lessons, stories, and activities). Implemented JWT-based auth, role-based access control, local file storage for media, and structured lesson flows with books, videos, activities, and assignments. Integrated YouTube Live, Google Meet, Stripe for payments and subscriptions, and SCORM file handling, alongside other integrations, while keeping the codebase stable and extensible for future cloud storage and mobile.",
+                images: Array.from({ length: 9 }, (_, i) => `assets/experience_img/riseupkids${i + 1}.png`),
+                achievements: [
+                    "Built complete MERN-based LMS MVP from scratch in one month",
+                    "Implemented Admin, Parent, and Child roles with full RBAC",
+                    "Integrated YouTube Live, Google Meet, Stripe, and SCORM handling",
+                    "Designed extensible structure for cloud and mobile later"
+                ],
+                tech: ["MERN Stack", "MongoDB", "Express.js", "React", "Node.js", "JWT", "Stripe", "YouTube Live", "Google Meet", "SCORM"]
+            }
+        ]
+    },
+    {
         name: "Atula Solutions (via Upwork)",
         location: "Remote",
         position: "Freelance Full Stack Developer",
