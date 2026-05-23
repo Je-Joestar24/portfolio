@@ -2,16 +2,14 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 5em;
-  padding: 3.5rem 2rem 4rem 2rem;
+  padding: var(--section-pad-y) var(--section-pad-x);
   background: none;
   position: relative;
   z-index: 1;
 }
 
 .experience-summary {
-  text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .experience-title {
@@ -24,7 +22,7 @@
 
 .experience-desc {
   text-align: center;
-  color: #5a5a6e;
+  color: var(--text-muted);
   font-size: 1.01rem;
   max-width: 700px;
   margin: 0 auto;
@@ -46,7 +44,7 @@
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(to bottom, var(--theme-primary), var(--brand-violet));
+  background: var(--brand-primary);
   border-radius: 2px;
 }
 
@@ -54,17 +52,17 @@
 .experience-company {
   position: relative;
   margin-bottom: 4rem;
-  background: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 2px 16px 0 var(--shadow-light);
-  border: 2px solid #e3e9f7;
+  background: var(--theme-surface-elevated);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--border-soft);
   padding: 2rem;
   transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
 }
 
 .experience-company:hover {
   box-shadow: 0 8px 32px 0 var(--shadow-dark);
-  border-color: var(--brand-violet);
+  border-color: var(--brand-primary);
   transform: translateY(-4px);
 }
 
@@ -85,8 +83,8 @@
 }
 
 .experience-company:hover::before {
-  background: var(--brand-violet);
-  box-shadow: 0 0 0 3px var(--brand-violet), 0 0 12px 4px rgba(179, 136, 255, 0.3);
+  background: var(--brand-accent);
+  box-shadow: 0 0 0 3px var(--brand-accent), 0 0 12px 4px rgba(166, 139, 106, 0.25);
   transform: scale(1.2);
 }
 
@@ -97,7 +95,7 @@
   align-items: flex-start;
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
-  border-bottom: 2px solid #e3e9f7;
+  border-bottom: 1px solid var(--border-soft);
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -117,7 +115,7 @@
 
 .experience-company__location {
   font-size: 0.95rem;
-  color: #5a5a6e;
+  color: var(--text-muted);
   font-weight: 500;
 }
 
@@ -141,7 +139,7 @@
 
 .experience-company__period {
   font-size: 0.9rem;
-  color: var(--brand-violet);
+  color: var(--brand-accent);
   font-weight: 600;
 }
 
@@ -162,7 +160,7 @@
 }
 
 .experience-project:hover {
-  border-color: var(--brand-violet);
+  border-color: var(--brand-primary);
   box-shadow: 0 4px 16px 0 var(--shadow-light);
 }
 
@@ -237,7 +235,7 @@
 
 .experience-slider .slick-dots li button:before {
   font-size: 0.7rem;
-  color: var(--brand-violet);
+  color: var(--brand-accent);
   opacity: 0.7;
 }
 
@@ -286,7 +284,7 @@
   padding-left: 1.5rem;
   margin-bottom: 0.6rem;
   font-size: 0.9rem;
-  color: #5a5a6e;
+  color: var(--text-muted);
   line-height: 1.6;
 }
 
@@ -294,7 +292,7 @@
   content: '▸';
   position: absolute;
   left: 0;
-  color: var(--brand-violet);
+  color: var(--brand-accent);
   font-weight: bold;
   font-size: 1rem;
 }
@@ -307,13 +305,13 @@
 }
 
 .experience-tech-item {
-  background: #fff;
+  background: var(--brand-peach);
   color: var(--text-dark);
   font-size: 0.8rem;
-  padding: 0.25rem 0.7rem;
-  border-radius: 0.3rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
   font-weight: 500;
-  border: 1px solid #e3e9f7;
+  border: 1px solid var(--border-soft);
   transition: all 0.2s;
 }
 
@@ -329,11 +327,11 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--theme-primary);
-  color: #fff;
+  background: var(--brand-primary);
+  color: var(--text-light);
   border: none;
   padding: 0.5rem 1.2rem;
-  border-radius: 0.4rem;
+  border-radius: 999px;
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
@@ -349,7 +347,7 @@
 }
 
 .experience-project__toggle:focus {
-  outline: 2px solid var(--brand-violet);
+  outline: 2px solid var(--brand-primary);
   outline-offset: 2px;
 }
 

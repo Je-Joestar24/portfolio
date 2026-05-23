@@ -3,145 +3,135 @@ export default class {
   skills = [
     {
       group: 'Frontend',
+      slug: 'frontend',
       items: [
         { name: 'HTML5', img: 'html.png' },
         { name: 'CSS3', img: 'css.png' },
-        { name: 'JavaScript (ES6+)', img: 'js.png' },
+        { name: 'JavaScript', img: 'js.png' },
         { name: 'TypeScript', img: 'typescript.png' },
         { name: 'React', img: 'react.png' },
-        { name: 'Vue.js (Composition & Options API)', img: 'vue.png' },
+        { name: 'Vue.js', img: 'vue.png' },
         { name: 'Tailwind CSS', img: 'tailwind.png' },
-      ]
+      ],
     },
     {
       group: 'Backend',
+      slug: 'backend',
       items: [
         { name: 'PHP 8+', img: 'php.png' },
-        { name: 'Laravel (10/12)', img: 'laravel.png' },
-        { name: 'Node.js', img: 'node.png' },
-        { name: 'Express.js', img: 'express.png' },
+        { name: 'Laravel', img: 'laravel.png' },
         { name: 'Python', img: 'python.png' },
         { name: 'Django', img: 'django.png' },
-        { name: 'Java (OOP/DSA)', img: 'java.png' },
-        { name: 'MySQL / MariaDB', img: 'sql.png' },
+        { name: 'Java', img: 'java.png' },
+        { name: 'MySQL', img: 'sql.png' },
         { name: 'PostgreSQL', img: 'psql.png' },
-        { name: 'MongoDB', img: 'mongodb.png' },
-      ]
+      ],
     },
     {
       group: 'MERN Stack',
+      slug: 'mern',
+      highlight: true,
       items: [
         { name: 'MongoDB', img: 'mongodb.png' },
         { name: 'Express.js', img: 'express.png' },
         { name: 'React', img: 'react.png' },
         { name: 'Node.js', img: 'node.png' },
-      ]
+      ],
     },
     {
       group: 'Tools & DevOps',
+      slug: 'tools',
       items: [
-        { name: 'Git (GitHub & GitLab)', img: 'gitgithub.png' },
+        { name: 'Git & GitHub', img: 'gitgithub.png' },
         { name: 'Docker', img: 'docker.png' },
-        { name: 'Redmine (Agile/Sprints)', img: 'redmine.png' },
+        { name: 'AWS', img: 'aws.png' },
+        { name: 'Redmine', img: 'redmine.png' },
         { name: 'VS Code', img: 'vscode.png' },
-        { name: 'Apache / Nginx', img: 'nginx.png' },
-      ]
+        { name: 'Nginx', img: 'nginx.png' },
+      ],
     },
     {
       group: 'AI & SDKs',
+      slug: 'ai',
       items: [
-        { name: 'Groq API (LLAMA Models)', img: 'groq.png' },
+        { name: 'Groq API', img: 'groq.png' },
         { name: 'Matterport SDK', img: 'matterport.png' },
         { name: 'Three.js', img: 'threejs.png' },
-      ]
+      ],
     },
     {
-      group: 'External APIs',
+      group: 'APIs',
+      slug: 'apis',
       items: [
-        { name: 'Google Maps API', img: 'maps.png' },
-        { name: 'Spoonacular API', img: 'spoonacular.png' },
-        { name: 'Google Books API', img: 'books.png' },
-        { name: 'LocalStorage (Web APIs)', img: 'localstorage.svg' },
+        { name: 'Google Maps', img: 'maps.png' },
+        { name: 'Spoonacular', img: 'spoonacular.png' },
+        { name: 'Google Books', img: 'books.png' },
+        { name: 'Web APIs', img: 'localstorage.svg' },
         { name: 'Stripe', img: 'stripe.png' },
-      ]
-    }
+      ],
+    },
   ];
 
   async getHtml() {
     return `
-        <section class="skills skills--white" aria-label="Skills">
-          <div class="skills__container">
-            <h2 class="skills__heading">Skills</h2>
-            <div class="skills__groups">
-              ${this.skills.map(group => `
-                <div class="skills__group">
-                  <h3 class="skills__group-title">${group.group}</h3>
-                  <div class="skills__icons">
-                    ${group.items.map(skill => `
-                      <div class="skills__icon-wrapper" data-skill="${skill.name}" role="button" tabindex="0" aria-label="${skill.name}">
-                        <img src="assets/technologies/${skill.img}" alt="${skill.name}" class="skills__icon" />
-                        <span class="skills__icon-name">${skill.name}</span>
-                      </div>
-                    `).join('')}
-                  </div>
-                </div>
-              `).join('')}
+        <section id="skills" class="skills-stack scroll-anchor" aria-label="Tech stack and skills">
+          <div class="skills-stack__container">
+            <header class="section-header section-header--left skills-stack__header">
+              <span class="section-header__eyebrow">Expertise</span>
+              <h2 class="section-header__title skills-stack__title">Tech <span>Stack</span></h2>
+              <p class="skills-stack__lede">Languages, frameworks, and tools I use daily — hover any logo for details.</p>
+              <hr class="section-header__rule section-header__rule--left" aria-hidden="true" />
+            </header>
+
+            <div class="skills-stack__board">
+              ${this.skills
+                .map(
+                  (group) => `
+                <article
+                  class="skills-stack__row${group.highlight ? ' skills-stack__row--highlight' : ''}"
+                  aria-labelledby="skills-row-${group.slug}"
+                >
+                  <h3 class="skills-stack__row-label" id="skills-row-${group.slug}">
+                    ${group.group}
+                  </h3>
+                  <ul class="skills-stack__grid" role="list">
+                    ${group.items
+                      .map(
+                        (skill) => `
+                      <li class="skills-stack__cell" role="listitem">
+                        <button
+                          type="button"
+                          class="skills-stack__item"
+                          data-skill="${skill.name}"
+                          aria-label="${skill.name}"
+                        >
+                          <span class="skills-stack__logo">
+                            <img
+                              src="assets/technologies/${skill.img}"
+                              alt=""
+                              class="skills-stack__img"
+                              width="40"
+                              height="40"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </span>
+                          <span class="skills-stack__label">${skill.name}</span>
+                        </button>
+                      </li>
+                    `
+                      )
+                      .join('')}
+                  </ul>
+                </article>
+              `
+                )
+                .join('')}
             </div>
           </div>
         </section>
         `;
   }
 
-  /**
-   * Binds hover event handlers for skill icons
-   * Adds smooth animations when hovering over skill icons
-   */
-  async bindAll() {
-    const iconWrappers = document.querySelectorAll('.skills__icon-wrapper');
-    
-    iconWrappers.forEach(wrapper => {
-      const icon = wrapper.querySelector('.skills__icon');
-      const name = wrapper.querySelector('.skills__icon-name');
-      
-      // Mouse enter - fade out image, fade in name
-      wrapper.addEventListener('mouseenter', () => {
-        if (icon && name) {
-          icon.style.animation = 'skillFadeOut 0.3s ease forwards';
-          name.style.animation = 'skillFadeIn 0.3s ease 0.1s forwards';
-        }
-      });
-      
-      // Mouse leave - fade in image, fade out name
-      wrapper.addEventListener('mouseleave', () => {
-        if (icon && name) {
-          icon.style.animation = 'none';
-          name.style.animation = 'none';
-          // Reset styles
-          setTimeout(() => {
-            icon.style.animation = '';
-            name.style.animation = '';
-          }, 10);
-        }
-      });
-      
-      // Keyboard support for accessibility
-      wrapper.addEventListener('focus', () => {
-        if (icon && name) {
-          icon.style.animation = 'skillFadeOut 0.3s ease forwards';
-          name.style.animation = 'skillFadeIn 0.3s ease 0.1s forwards';
-        }
-      });
-      
-      wrapper.addEventListener('blur', () => {
-        if (icon && name) {
-          icon.style.animation = 'none';
-          name.style.animation = 'none';
-          setTimeout(() => {
-            icon.style.animation = '';
-            name.style.animation = '';
-          }, 10);
-        }
-      });
-    });
-  }
+  async bindAll() {}
 }

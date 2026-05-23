@@ -14,14 +14,19 @@ export default class {
     async getHtml() {
         return `
         <section
-                class="short_summary short_summary--white"
+                id="summary"
+                class="short_summary short_summary--white scroll-anchor"
                 aria-label="Short Introduction"
             >
             <div class="short_summary__container short_summary__container--split">
             <div class="short_summary__left">
-                <h2 class="short_summary__heading">
-                LET ME <span>INTRODUCE</span> MYSELF
+                <header class="section-header section-header--left">
+                <span class="section-header__eyebrow">About</span>
+                <h2 class="section-header__title short_summary__heading">
+                Let me <span>introduce</span> myself
                 </h2>
+                <hr class="section-header__rule section-header__rule--left" aria-hidden="true" />
+                </header>
                 <div class="short_summary__content">
                 <p class="short_summary__desc">
                     With years of hands-on experience in full-stack development, I specialize in building 

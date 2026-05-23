@@ -29,11 +29,15 @@ export default class extends AView {
     async getHtml() {
         return `
         <section class="services-section" aria-label="Services">
-          <h2 class="services-title">Services</h2>
-          <p class="services-desc">I provide a range of professional services including Web Development, UX/UI Design, Web Maintenance, Optimization, and creation of technical diagrams (Use Case, Class, ERD, and more) to help you build, improve, and document your digital projects.</p>
+          <header class="section-header">
+            <span class="section-header__eyebrow">What I Offer</span>
+            <h2 class="section-header__title">Professional <span>Services</span></h2>
+            <p class="section-header__desc">Web development, UX/UI design, maintenance, optimization, and technical documentation — Use Case, Class, ERD, and more — to build, improve, and document your digital products.</p>
+            <hr class="section-header__rule" aria-hidden="true" />
+          </header>
           ${await this.cards.getHtml()}
           <div class="services-decorative" aria-hidden="true">
-            <svg width="120" height="60" viewBox="0 0 120 60" fill="none"><polygon points="10,50 60,10 110,50" fill="#b388ff11"><animate attributeName="points" values="10,50 60,10 110,50;10,40 60,20 110,40;10,50 60,10 110,50" dur="3s" repeatCount="indefinite"/></polygon></svg>
+            <svg width="120" height="60" viewBox="0 0 120 60" fill="none"><polygon points="10,50 60,10 110,50" fill="#a68b6a18"><animate attributeName="points" values="10,50 60,10 110,50;10,40 60,20 110,40;10,50 60,10 110,50" dur="3s" repeatCount="indefinite"/></polygon></svg>
           </div>
         </section>
         `;

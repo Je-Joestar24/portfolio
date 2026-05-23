@@ -2,10 +2,14 @@
 export default class {
     async getHtml() {
         return `
-        <section class="about about--white" id="about" role="region" aria-label="About Me">
+        <section class="about about--white scroll-anchor" id="about-me" role="region" aria-label="About Me">
           <div class="about__container about__container--split">
             <div class="about__left">
-              <h2 class="about__heading">About Me</h2>
+              <header class="section-header section-header--left about__header">
+                <span class="section-header__eyebrow">Profile</span>
+                <h2 class="section-header__title about__heading">About <span>Me</span></h2>
+                <hr class="section-header__rule section-header__rule--left" aria-hidden="true" />
+              </header>
               <h3 class="about__name">My name is <span>Jejomar Parrilla</span> and I am a full stack developer.</h3>
               <p class="about__summary">
                 Full-stack developer with 3+ years of experience building scalable web applications. Currently working as a Freelance Full Stack Developer at Atula Solutions, specializing in MERN stack and Laravel/Vue.js ecosystems. Passionate about writing efficient, maintainable code and delivering production-ready solutions.
@@ -16,7 +20,7 @@ export default class {
                 <li><strong>Email:</strong> <a href="mailto:parrillajejomar@gmail.com">parrillajejomar@gmail.com</a></li>
                 <li><strong>From:</strong> Ipil, Ormoc City, Leyte, Philippines</li>
               </ul>
-              <h2 class="skills__heading">Education</h2>
+              <h2 class="about__subheading">Education</h2>
               <div class="about__badges">
                 <span class="about__badge" title="Magna Cum Laude">📚 BSCS Graduate</span>
                 <span class="about__badge" title="Magna Cum Laude">🏅 Magna Cum Laude</span>
@@ -28,7 +32,7 @@ export default class {
               <div class="about__decorative">
                 <!-- Minimal decorative SVG/icon -->
                 <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <circle cx="60" cy="60" r="56" stroke="#b388ff" stroke-width="4" fill="#f5f6fa" />
+                  <circle cx="60" cy="60" r="56" stroke="#a68b6a" stroke-width="4" fill="#f5efe6" />
                   <rect x="35" y="35" width="50" height="50" rx="12" fill="#e3e9f7" />
                 </svg>
               </div>

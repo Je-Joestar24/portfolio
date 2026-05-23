@@ -1,12 +1,12 @@
 <!--
   JEJOMAR V. PARRILLA - Portfolio Website
   --------------------------------------------------
-  Main HTML entry point for the portfolio SPA.
+  Main HTML entry point for the single-page portfolio.
   - Loads all required CSS and JS assets
   - Sets up the root <main id="app"></main> for dynamic SPA rendering
   - Integrates Google Fonts and Slick Carousel for UI/UX
   - Ensures responsive, accessible, and modern design
-  - Favicon and meta tags for branding and SEO
+  - Favicon, meta tags, and structured data for branding and SEO
   - All content is injected dynamically via JavaScript (see js/app.js)
 -->
 <!DOCTYPE html>
@@ -14,7 +14,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JEJOMAR V. PARRILLA</title>
+    <meta name="description" content="Jejomar Parrilla — Full-stack web developer portfolio. Projects in Laravel, Vue.js, React, Node.js, and Django. Magna Cum Laude CS graduate, top 5% CodeChum programmer." />
+    <meta name="author" content="Jejomar Parrilla" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f5efe6" />
+    <link rel="canonical" href="https://je-joestar24.github.io/portfolio/" />
+
+    <title>Jejomar Parrilla | Full-Stack Developer — Jejo-Star</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Jejo-Star Portfolio" />
+    <meta property="og:title" content="Jejomar Parrilla | Full-Stack Developer" />
+    <meta property="og:description" content="Portfolio of Jejomar Parrilla — full-stack developer specializing in Laravel, Vue.js, React, and scalable web applications." />
+    <meta property="og:url" content="https://je-joestar24.github.io/portfolio/" />
+    <meta property="og:image" content="https://je-joestar24.github.io/portfolio/assets/profile.png" />
+    <meta property="og:image:alt" content="Jejo-Star logo" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jejomar Parrilla | Full-Stack Developer" />
+    <meta name="twitter:description" content="Portfolio of Jejomar Parrilla — full-stack developer specializing in Laravel, Vue.js, React, and scalable web applications." />
+    <meta name="twitter:image" content="https://je-joestar24.github.io/portfolio/assets/logo.png" />
+    <meta name="twitter:image:alt" content="Jejo-Star logo" />
+
+    <link rel="icon" type="image/png" href="assets/profile.png" />
+    <link rel="apple-touch-icon" href="assets/profile.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,7 +60,40 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
-    <link rel="icon" type="image/png" href="assets/profile.png">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jejomar Parrilla",
+        "alternateName": "Jejo-Star",
+        "url": "https://je-joestar24.github.io/portfolio/",
+        "image": "https://je-joestar24.github.io/portfolio/assets/logo.png",
+        "jobTitle": "Full-Stack Web Developer",
+        "email": "jpar1252003@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ormoc City",
+          "addressCountry": "PH"
+        },
+        "sameAs": [
+          "https://github.com/Je-Joestar24",
+          "https://www.linkedin.com/in/jejomar-parrilla-ab5442239/",
+          "https://www.facebook.com/jejomar.parrilla/"
+        ],
+        "knowsAbout": [
+          "JavaScript",
+          "PHP",
+          "Laravel",
+          "Vue.js",
+          "React",
+          "Node.js",
+          "Django",
+          "MySQL",
+          "PostgreSQL"
+        ]
+      }
+    </script>
   </head>
   <body>
     <main id="app"></main>

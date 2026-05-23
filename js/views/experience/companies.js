@@ -7,7 +7,7 @@ export const companies = [
         name: "RiseUpKids (via Upwork)",
         location: "Remote",
         position: "Full Stack Developer",
-        period: "2025",
+        period: "Dec 2025 – Present",
         projects: [
             {
                 title: "Rise Up Kids — Child Learning Management System (MVP)",

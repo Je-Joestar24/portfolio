@@ -1,13 +1,15 @@
 export default class {
     async getHtml() {
         return `
-            <div class="experience-summary">
-                <h2 class="experience-title">Work Experience</h2>
-                <p class="experience-desc">
-                    Professional experience building scalable web applications, managing deployments, and collaborating in agile environments. 
-                    From full-stack development to 3D visualization, I've worked on diverse projects across different industries.
+            <header class="section-header experience-summary">
+                <span class="section-header__eyebrow">Career</span>
+                <h2 class="section-header__title">Work <span>Experience</span></h2>
+                <p class="section-header__desc">
+                    Building scalable web applications, managing deployments, and collaborating in agile environments —
+                    from full-stack development to 3D visualization across diverse industries.
                 </p>
-            </div>
+                <hr class="section-header__rule" aria-hidden="true" />
+            </header>
         `;
     }
 }

@@ -25,9 +25,9 @@ export default class {
     getHtml() {
         return `
             ${this.getNav()}
+            ${this.getSideNav()}
             ${this.getDisplay()}
             ${this.getFooter()}
-            ${this.getMessage()}
             ${this.getArcsModal()}
             ${this.getLoginModal()}
             ${this.getSignupModal()}
@@ -55,15 +55,11 @@ export default class {
      * @returns {string} The HTML content for the footer section.
      */
     getFooter() {
-        return '<footer id="footer" class="footer"></footer>';
+        return '<footer id="footer" class="footer" aria-label="Site footer"></footer>';
     }
 
-    /**
-     * Generates the HTML content for the message section.
-     * @returns {string} The HTML content for the message section.
-     */
-    getMessage() {
-        return '<div id="app__message"></div>';
+    getSideNav() {
+        return '<nav id="side-nav" class="side-nav" aria-label="Section dot navigation"></nav>';
     }
 
     /**

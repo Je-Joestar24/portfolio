@@ -10,27 +10,32 @@ export default class FooterNavigations {
     navs = [
       {
         label: 'Home',
-        href: '#/',
+        href: '#home',
         target: ''
       },
       {
         label: 'About',
-        href: '#/about',
+        href: '#about-me',
         target: ''
       },
       {
         label: 'Projects',
-        href: '#/projects',
+        href: '#projects',
         target: ''
       },
       {
         label: 'Experience',
-        href: '#/experience',
+        href: '#experience',
         target: ''
       },
       {
         label: 'Services',
-        href: '#/services',
+        href: '#services',
+        target: ''
+      },
+      {
+        label: 'Contact',
+        href: '#contact',
         target: ''
       },
       {
