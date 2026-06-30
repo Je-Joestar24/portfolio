@@ -4,7 +4,8 @@
 import AView from './AbstractView.js';
 
 const CONTACT = {
-  email: 'jpar1252003@gmail.com',
+  name: 'Jejomar Parrilla',
+  email: 'parrillajejomar@gmail.com',
   phone: '09073010472',
   phoneIntl: '639073010472',
   location: 'Ormoc City, Philippines',
@@ -51,6 +52,15 @@ export default class extends AView {
 
         <div class="contact-section__layout">
           <aside class="contact-section__aside" aria-label="Contact information">
+            <div class="contact-profile">
+              <p class="contact-profile__name">${CONTACT.name}</p>
+              <a
+                href="mailto:${CONTACT.email}"
+                class="contact-profile__email"
+                aria-label="Email ${CONTACT.name} at ${CONTACT.email}"
+              >${CONTACT.email}</a>
+            </div>
+
             <div class="contact-status" role="status">
               <span class="contact-status__dot" aria-hidden="true"></span>
               <span class="contact-status__text">${CONTACT.availability}</span>
@@ -143,7 +153,7 @@ export default class extends AView {
                     required
                     minlength="2"
                     maxlength="80"
-                    placeholder="Juan Dela Cruz"
+                    placeholder="Your full name"
                     aria-required="true"
                   />
                   <span class="contact-form__error" id="contact-name-error" role="alert"></span>
@@ -197,12 +207,12 @@ export default class extends AView {
               </div>
 
               <div class="contact-form__actions">
-                <button type="submit" class="contact-form__submit" aria-label="Send message via email">
-                  <span class="contact-form__submit-text">Send Message</span>
+                <button type="submit" class="contact-form__submit" aria-label="Send email to ${CONTACT.name}">
+                  <span class="contact-form__submit-text">Send</span>
                   <svg class="contact-form__submit-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22 11 13 2 9 22 2z"/></svg>
                 </button>
                 <p class="contact-form__hint" id="contact-form-hint">
-                  Opens your email client with a pre-filled message. Drafts are saved locally as you type.
+                  Sends to ${CONTACT.email} via your email app — message is pre-filled when you hit Send.
                 </p>
               </div>
 
@@ -337,7 +347,7 @@ export default class extends AView {
       const message = fields.message.value.trim();
 
       const body = [
-        `Hi Jejomar,`,
+        `Hi ${CONTACT.name},`,
         ``,
         message,
         ``,
@@ -346,10 +356,22 @@ export default class extends AView {
         email,
       ].join('\n');
 
-      const mailto = `mailto:${CONTACT.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const mailSubject = subject.startsWith('Portfolio:')
+        ? subject
+        : `Portfolio: ${subject}`;
+      const mailto = `mailto:${CONTACT.email}?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(body)}`;
 
-      showFeedback('success', 'Opening your email app… If nothing opens, email me directly at ' + CONTACT.email);
-      window.location.href = mailto;
+      const mailLink = document.createElement('a');
+      mailLink.href = mailto;
+      mailLink.rel = 'noopener noreferrer';
+      document.body.appendChild(mailLink);
+      mailLink.click();
+      mailLink.remove();
+
+      showFeedback(
+        'success',
+        `Opening your email app to send to ${CONTACT.email}. If nothing opens, copy the address from the sidebar.`
+      );
 
       localStorage.removeItem(DRAFT_KEY);
       setTimeout(() => form.reset(), 600);

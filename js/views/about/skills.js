@@ -110,8 +110,8 @@ export default class {
                               src="assets/technologies/${skill.img}"
                               alt=""
                               class="skills-stack__img"
-                              width="40"
-                              height="40"
+                              width="52"
+                              height="52"
                               loading="lazy"
                               decoding="async"
                             />

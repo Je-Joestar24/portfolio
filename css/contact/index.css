@@ -17,6 +17,38 @@
   align-items: start;
 }
 
+/* Profile — name + email (always visible) */
+.contact-profile {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.contact-profile__name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--brand-primary);
+  margin: 0 0 0.35rem;
+  letter-spacing: 0.01em;
+  line-height: 1.25;
+}
+
+.contact-profile__email {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  word-break: break-all;
+  transition: color var(--duration-fast) ease;
+}
+
+.contact-profile__email:hover,
+.contact-profile__email:focus-visible {
+  color: var(--brand-primary);
+  text-decoration: underline;
+  outline: none;
+}
+
 /* Availability badge */
 .contact-status {
   display: inline-flex;
