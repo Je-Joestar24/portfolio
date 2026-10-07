@@ -11,8 +11,8 @@ import Contact from '../views/contact.js';
 export const PORTFOLIO_SECTIONS = [
     { id: 'home', view: Home, navId: 'home-nav', title: 'Jejo-Star | Home', label: 'Home' },
     { id: 'about', view: About, navId: 'about-nav', title: 'Jejo-Star | About', label: 'About' },
-    { id: 'projects', view: Projects, navId: 'projects-nav', title: 'Jejo-Star | Projects', label: 'Projects' },
     { id: 'experience', view: Experience, navId: 'experience-nav', title: 'Jejo-Star | Experience', label: 'Experience' },
+    { id: 'projects', view: Projects, navId: 'projects-nav', title: 'Jejo-Star | Projects', label: 'Projects' },
     { id: 'services', view: Services, navId: 'services-nav', title: 'Jejo-Star | Services', label: 'Services' },
     { id: 'contact', view: Contact, navId: 'contact-nav', title: 'Jejo-Star | Contact', label: 'Contact' },
 ];
@@ -23,8 +23,8 @@ export const SCROLL_ANCHORS = [
     { id: 'summary', label: 'Introduction', navId: 'home-nav', title: 'Jejo-Star | Introduction' },
     { id: 'about-me', label: 'About Me', navId: 'about-nav', title: 'Jejo-Star | About' },
     { id: 'skills', label: 'Skills', navId: 'about-nav', title: 'Jejo-Star | Skills' },
-    { id: 'projects', label: 'Projects', navId: 'projects-nav', title: 'Jejo-Star | Projects' },
     { id: 'experience', label: 'Experience', navId: 'experience-nav', title: 'Jejo-Star | Experience' },
+    { id: 'projects', label: 'Projects', navId: 'projects-nav', title: 'Jejo-Star | Projects' },
     { id: 'services', label: 'Services', navId: 'services-nav', title: 'Jejo-Star | Services' },
     { id: 'contact', label: 'Contact', navId: 'contact-nav', title: 'Jejo-Star | Contact' },
 ];

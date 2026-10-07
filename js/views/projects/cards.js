@@ -29,6 +29,10 @@ export default class {
         `;
     }
 
+    inlineCode(text) {
+        return text.replace(/`([^`]+)`/g, "<code>$1</code>");
+    }
+
     projectHTML(project, index) {
         const id = `project-${index}`;
         const previewHighlights = project.highlights?.slice(0, 2) ?? [];
@@ -57,7 +61,7 @@ export default class {
 
                         ${previewHighlights.length ? `
                             <ul class="project-showcase__preview" aria-label="${project.title} key highlights preview">
-                                ${previewHighlights.map((item) => `<li>${item}</li>`).join("")}
+                                ${previewHighlights.map((item) => `<li>${this.inlineCode(item)}</li>`).join("")}
                             </ul>
                         ` : ""}
 
@@ -74,7 +78,7 @@ export default class {
                             ${project.highlights?.length ? `
                                 <h4 class="project-showcase__details-label">Technical highlights</h4>
                                 <ul class="project-showcase__highlights">
-                                    ${project.highlights.map((item) => `<li>${item}</li>`).join("")}
+                                    ${project.highlights.map((item) => `<li>${this.inlineCode(item)}</li>`).join("")}
                                 </ul>
                             ` : ""}
                             <h4 class="project-showcase__details-label">Stack</h4>

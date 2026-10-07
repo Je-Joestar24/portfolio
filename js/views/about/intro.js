@@ -12,7 +12,7 @@ export default class {
               </header>
               <h3 class="about__name">My name is <span>Jejomar Parrilla</span> and I am a full stack developer.</h3>
               <p class="about__summary">
-                Full-stack developer with 3+ years of experience building scalable web applications. Currently working as a Freelance Full Stack Developer at Atula Solutions, specializing in MERN stack and Laravel/Vue.js ecosystems. Passionate about writing efficient, maintainable code and delivering production-ready solutions.
+                Full-stack developer with hands-on experience building and maintaining production applications using React, React Native, Node.js, Express, MongoDB, Laravel, Vue.js, PostgreSQL, and AWS. Currently working as a Full Stack Developer at Rise Up Kids, owning features end-to-end across the frontend, backend, database, and infrastructure — from third-party integrations and security improvements to automated testing and production deployments.
               </p>
               <ul class="about__details">
                 <li><strong>Age:</strong> 22</li>
@@ -21,20 +21,22 @@ export default class {
                 <li><strong>From:</strong> Ipil, Ormoc City, Leyte, Philippines</li>
               </ul>
               <h2 class="about__subheading">Education</h2>
+              <p class="about__education">BS Computer Science — Western Leyte College of Ormoc · Graduated July 2025</p>
               <div class="about__badges">
-                <span class="about__badge" title="Magna Cum Laude">📚 BSCS Graduate</span>
                 <span class="about__badge" title="Magna Cum Laude">🏅 Magna Cum Laude</span>
-                <span class="about__badge" title="Capstone Project of the Year">🏆 Capstone of the Year 2025</span>
+              </div>
+              <h2 class="about__subheading">Awards</h2>
+              <div class="about__badges">
                 <span class="about__badge" title="Programmer of the Year">💻 Programmer of the Year 2025</span>
+                <span class="about__badge" title="Capstone Project of the Year">🏆 Capstone of the Year 2025</span>
+                <span class="about__badge" title="Top 5% Programmer Nationwide — CodeChum Academy">⭐ Top 5% Nationwide · CodeChum</span>
+                <span class="about__badge" title="EVCO Champion — Oct 2024 (3rd Place — Oct 2023)">🥇 EVCO Champion 2024</span>
+                <span class="about__badge" title="National IT Competitor (iSite & CodeChum) — Java & Python Tracks, 2023–2025">🎯 National IT Competitor</span>
               </div>
             </div>
             <div class="about__right">
               <div class="about__decorative">
-                <!-- Minimal decorative SVG/icon -->
-                <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <circle cx="60" cy="60" r="56" stroke="#a68b6a" stroke-width="4" fill="#f5efe6" />
-                  <rect x="35" y="35" width="50" height="50" rx="12" fill="#e3e9f7" />
-                </svg>
+                <img src="assets/profile4.png" alt="" class="about__profile-img" width="240" height="240" loading="lazy" decoding="async" />
               </div>
             </div>
           </div>

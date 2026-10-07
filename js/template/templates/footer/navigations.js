@@ -19,13 +19,13 @@ export default class FooterNavigations {
         target: ''
       },
       {
-        label: 'Projects',
-        href: '#projects',
+        label: 'Experience',
+        href: '#experience',
         target: ''
       },
       {
-        label: 'Experience',
-        href: '#experience',
+        label: 'Projects',
+        href: '#projects',
         target: ''
       },
       {

@@ -29,23 +29,24 @@ export default class {
                 </header>
                 <div class="short_summary__content">
                 <p class="short_summary__desc">
-                    With years of hands-on experience in full-stack development, I specialize in building 
-                    scalable, efficient applications that prioritize clean architecture and maintainable code. 
-                    My approach centers on writing quality, performant solutions that solve real-world problems 
-                    while ensuring long-term maintainability.
+                    I'm a full-stack developer with hands-on experience building and maintaining production
+                    applications — from scratch and across existing codebases. Stronger on the frontend, I own
+                    features end-to-end across the frontend, backend, database, and infrastructure, with a focus
+                    on clean architecture and maintainable code.
                 </p>
                 <p class="short_summary__desc short_summary__desc--highlight">
                     I excel in modern JavaScript ecosystems, with deep expertise in the
-                    <span class="short_summary__lang">MERN stack</span> (MongoDB, Express.js, React, Node.js) 
+                    <span class="short_summary__lang">MERN stack</span> (MongoDB, Express.js, React, Node.js),
+                    mobile apps with <span class="short_summary__lang">React Native</span>,
                     and full-stack development using
                     <span class="short_summary__lang">Laravel</span> with
                     <span class="short_summary__lang">Vue.js</span>.
                 </p>
                 <p class="short_summary__desc">
-                    I'm passionate about crafting efficient, production-ready applications with a focus on 
-                    code quality, performance optimization, and best practices. Whether it's building RESTful APIs, 
-                    implementing complex state management, or optimizing database queries, I deliver solutions 
-                    that are both robust and scalable.
+                    I'm passionate about crafting efficient, production-ready applications with a focus on
+                    code quality, security, and best practices. Whether it's building RESTful APIs, integrating
+                    payment providers and third-party services, writing automated tests, or managing production
+                    deployments on AWS, I deliver solutions that are both robust and scalable.
                 </p>
                 </div>
                 <div class="short_summary__findme">
@@ -85,7 +86,7 @@ export default class {
                 <div class="short_summary__profile-anim">
                 <img
                     src="assets/profile.png"
-                    alt="Profile placeholder"
+                    alt="Portrait of Jejomar Parrilla"
                     class="short_summary__profile-img"
                 />
                 <div class="short_summary__virtual-decor"></div>

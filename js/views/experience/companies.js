@@ -4,23 +4,25 @@
  */
 export const companies = [
     {
-        name: "RiseUpKids (via Upwork)",
+        name: "Rise Up Kids",
         location: "Remote",
         position: "Full Stack Developer",
         period: "Dec 2025 – Present",
         projects: [
             {
-                title: "Rise Up Kids — Child Learning Management System (MVP)",
-                shortDesc: "Child-friendly LMS built from scratch in one month with MERN stack, role-based access (Admin, Teacher, Parent, Child), and multiple third-party integrations.",
-                fullDesc: "Delivered a full MVP of a child learning management system for RiseUpKids, designed and built custom from scratch within one month. The platform serves three core users: Admin (Users, content and lesson management), Admin (content and lesson management), Parent (child accounts and progress tracking), and Child (guided lessons, stories, and activities). Implemented JWT-based auth, role-based access control, local file storage for media, and structured lesson flows with books, videos, activities, and assignments. Integrated YouTube Live, Google Meet, Stripe for payments and subscriptions, and SCORM file handling, alongside other integrations, while keeping the codebase stable and extensible for future cloud storage and mobile.",
+                title: "Rise Up Kids — Child Learning Platform (Web & Mobile)",
+                shortDesc: "Live child learning platform across web and mobile, built with React/Vite, Node.js/Express, MongoDB, and React Native/Expo — covering payments, security, automated testing, and production deployment.",
+                fullDesc: "Develop and maintain a live learning platform for Rise Up Kids across web and mobile, using React/Vite, Node.js/Express, MongoDB, and React Native/Expo. Build and maintain REST APIs, authentication flows, database models, business logic, and responsive interfaces across the platform. Developed payment integrations with Stripe, PayPal, and PagBank/PagSeguro, including webhook processing, signature verification, idempotency, and security hardening. Built and prepared the mobile app for iOS and Android, including EAS builds and App Store / Google Play submission requirements. Implemented security remediation covering authentication, authorization, privilege escalation, path traversal, secret management, and data privacy, plus child-data privacy and consent improvements aligned with COPPA/LGPD. Handle production deployment and infrastructure with Linux, Nginx, PM2, AWS S3, and CloudFront, working across the full product lifecycle from implementation to post-release troubleshooting.",
                 images: Array.from({ length: 9 }, (_, i) => `assets/experience_img/riseupkids${i + 1}.png`),
                 achievements: [
-                    "Built complete MERN-based LMS MVP from scratch in one month",
-                    "Implemented Admin, Parent, and Child roles with full RBAC",
-                    "Integrated YouTube Live, Google Meet, Stripe, and SCORM handling",
-                    "Designed extensible structure for cloud and mobile later"
+                    "Integrated Stripe, PayPal, and PagBank/PagSeguro payments with hardened webhook processing",
+                    "Built the React Native/Expo mobile app and prepared it for App Store and Google Play release",
+                    "Reworked structured logging with Pino, adding PII and secret redaction across ~440 call sites",
+                    "Maintained regression coverage across 800+ Jest and Vitest tests while shipping security and feature changes",
+                    "Implemented COPPA/LGPD-aligned child-data privacy, consent, and data deletion workflows",
+                    "Handled production deployments on Linux with Nginx, PM2, AWS S3, and CloudFront"
                 ],
-                tech: ["MERN Stack", "MongoDB", "Express.js", "React", "Node.js", "JWT", "Stripe", "YouTube Live", "Google Meet", "SCORM"]
+                tech: ["React", "Vite", "React Native", "Expo", "Node.js", "Express.js", "MongoDB", "Stripe", "PayPal", "PagBank/PagSeguro", "Jest", "Vitest", "Pino", "AWS S3", "CloudFront", "Nginx", "PM2"]
             }
         ]
     },
@@ -28,7 +30,7 @@ export const companies = [
         name: "Atula Solutions (via Upwork)",
         location: "Remote",
         position: "Freelance Full Stack Developer",
-        period: "Sep 2025 – Present",
+        period: "Sep 2025 – Sep 2026",
         projects: [
             {
                 title: "Mental Health Triage Platform",
@@ -41,7 +43,7 @@ export const companies = [
                     "Developed triage, diagnosis, and admin modules",
                     "Created scalable structure ready for payment integration"
                 ],
-                tech: ["MongoDB", "Expres.js", "React.js", "Node.js", "RESTful API", "Role-based Permissions", "Stripe"]
+                tech: ["MongoDB", "Express.js", "React.js", "Node.js", "RESTful API", "Role-based Permissions", "Stripe"]
             },
             {
                 title: "Child Care Management Platform",

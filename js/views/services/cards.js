@@ -6,6 +6,11 @@ export default class {
             desc: "Modern, scalable websites and web apps with clean code, responsive layouts, and seamless user experience."
         },
         {
+            title: "Mobile App Development",
+            icon: `<svg viewBox='0 0 24 24' width='32' height='32' fill='none' aria-hidden='true'><rect x='7' y='2' width='10' height='20' rx='3' stroke='#8b7355' stroke-width='2'/><path d='M11 18h2' stroke='#a68b6a' stroke-width='2' stroke-linecap='round'/></svg>`,
+            desc: "Cross-platform iOS and Android apps with React Native and Expo, from build to App Store and Google Play release."
+        },
+        {
             title: "Design UX/UI",
             icon: `<svg viewBox='0 0 24 24' width='32' height='32' fill='none' aria-hidden='true'><circle cx='12' cy='12' r='9' stroke='#8b7355' stroke-width='2'/><path d='M8 15c1.5 2 6.5 2 8 0' stroke='#a68b6a' stroke-width='2' stroke-linecap='round'/><circle cx='9' cy='10' r='1' fill='#a68b6a'/><circle cx='15' cy='10' r='1' fill='#a68b6a'/></svg>`,
             desc: "Intuitive, beautiful interfaces for web and mobile. Focused on usability, accessibility, and brand identity."

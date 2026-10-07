@@ -10,7 +10,7 @@ export default class Copyright {
     async getHtml(){
         return `
           <div class="footer__bottom">
-            <span class="footer__copyright">&copy; 2025 Jejomar Parrilla. All rights reserved.</span>
+            <span class="footer__copyright">&copy; ${new Date().getFullYear()} Jejomar Parrilla. All rights reserved.</span>
           </div>
         `;
     }

@@ -83,6 +83,11 @@
   font-weight: 500;
 }
 
+.about__education {
+  margin: 0 0 0.75rem;
+  color: var(--about-text, #181824);
+}
+
 .about__badges {
   display: flex;
   gap: 1rem;
@@ -123,12 +128,19 @@
 }
 .about__decorative {
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 240px;
+  height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: decor-pulse 3.5s infinite alternate;
+}
+.about__profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  border: 3px solid var(--brand-peach);
+  box-shadow: var(--shadow-pastel);
 }
 @keyframes decor-pulse {
   0% { opacity: 0.7; }
@@ -178,8 +190,8 @@
     min-height: 60px;
   }
   .about__decorative {
-    width: 60px;
-    height: 60px;
+    width: 170px;
+    height: 170px;
   }
 }
 

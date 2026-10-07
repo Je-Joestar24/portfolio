@@ -10,6 +10,7 @@ export default class {
         { name: 'JavaScript', img: 'js.png' },
         { name: 'TypeScript', img: 'typescript.png' },
         { name: 'React', img: 'react.png' },
+        { name: 'React Native', img: 'react.png' },
         { name: 'Vue.js', img: 'vue.png' },
         { name: 'Tailwind CSS', img: 'tailwind.png' },
       ],
